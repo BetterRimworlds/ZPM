@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Archotech ZPM</name>
+    <supportedVersions>
+        <li>1.2</li>
+    </supportedVersions>
+    <author>HopeSeekr</author>
+    <url>https://github.com/BetterRimworlds/Archotech-ZPM/</url>
+    <description>Version: 1.0.0
+The Archotech ZPM slowly converts Dark Energy into electricity, for free, but has an outsided capacity of 20,000 Watts.
+You can manually dictate how much power it draws from your grid or sends out. It is also EMP shielded and works during
+solar flares.
+
+**ALERT: The transdimensional conduits of the ZPM can have *devastating* consequences for all higher lifeforms on the map!** 
+        
+It is highly recommended that you do not allow it to get above 75% full capacity.
+
+Non Steam Downloads and GitHub Repositories of this mod is available at: https://github.com/BetterRimworlds/Archotech-ZPM/
+    </description>
+</ModMetaData>

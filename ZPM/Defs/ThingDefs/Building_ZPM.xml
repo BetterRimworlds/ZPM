@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="BuildingBase" Abstract="True">
+        <category>Building</category>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+
+    <ThingDef Class="Enhanced_Development.Stargate.StargateThingDef" ParentName="BuildingBase">
+        <defName>ArcotechZPM</defName>
+        <label>Arcotech ZPM</label>
+        <thingClass>BetterRimworlds.ZPM</thingClass>
+        <graphicData>
+            <texPath>Things/Buildings/ZPN</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Passable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <specialDisplayRadius>2</specialDisplayRadius>
+        <tickerType>Rare</tickerType>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <MaxHitPoints>1000000</MaxHitPoints>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <description>Converts Dark Energy into electricity and stores amazing amounts of power. Solar flare proof.</description>
+        <researchPrerequisites>
+            <li>Building_ZPM_research</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>2000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+        </comps>
+        <size>(3,3)</size>
+        <costList>
+            <Steel>2000</Steel>
+            <Uranium>500</Uranium>
+            <Plasteel>1000</Plasteel>
+            <Gold>200</Gold>
+            <Silver>5000</Silver>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <hasInteractionCell>False</hasInteractionCell>
+        <designationCategory>Power</designationCategory>
+        <staticSunShadowHeight>0.75</staticSunShadowHeight>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    </ThingDef>
+</Defs>
