@@ -9,36 +9,53 @@
         <repairEffect>Repair</repairEffect>
     </ThingDef>
 
-    <ThingDef Class="Enhanced_Development.Stargate.StargateThingDef" ParentName="BuildingBase">
-        <defName>ArcotechZPM</defName>
-        <label>Arcotech ZPM</label>
-        <thingClass>BetterRimworlds.ZPM</thingClass>
+    <ThingDef ParentName="BuildingBase">
+        <defName>ArchotechZPM</defName>
+        <label>Archotech ZPM</label>
+        <thingClass>BetterRimworlds.ZPM.Building_ZPM</thingClass>
         <graphicData>
-            <texPath>Things/Buildings/ZPN</texPath>
+            <texPath>Things/Buildings/ZPM</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(3,3)</drawSize>
         </graphicData>
+        <iconPath>UI/Icons/ZPM</iconPath>
+        <techLevel>Archotech</techLevel>
+        <stackLimit>1</stackLimit>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>	
         <altitudeLayer>Building</altitudeLayer>
-        <passability>Passable</passability>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>1</fillPercent>
-        <specialDisplayRadius>2</specialDisplayRadius>
+        <specialDisplayRadius>1</specialDisplayRadius>
         <tickerType>Rare</tickerType>
         <statBases>
             <WorkToMake>30000</WorkToMake>
             <MaxHitPoints>1000000</MaxHitPoints>
+            <MarketValue>20000.5</MarketValue>
             <Flammability>0.0</Flammability>
+	        <Mass>20</Mass>
         </statBases>
         <description>Converts Dark Energy into electricity and stores amazing amounts of power. Solar flare proof.</description>
+	    <tradeability>Buyable</tradeability>
+            <tradeNeverStack>true</tradeNeverStack>
         <researchPrerequisites>
             <li>Building_ZPM_research</li>
         </researchPrerequisites>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>25000</storedEnergyMax>
+                <efficiency>2.00</efficiency>
+                <transmitsPower>true</transmitsPower>
                 <shortCircuitInRain>false</shortCircuitInRain>
-                <basePowerConsumption>2000</basePowerConsumption>
             </li>
+<!--            <li Class="CompProperties_Power">-->
+<!--                <compClass>CompPowerTrader</compClass>-->
+<!--                <shortCircuitInRain>false</shortCircuitInRain>-->
+<!--                <basePowerConsumption>2000</basePowerConsumption>-->
+<!--            </li>-->
             <li Class="CompProperties_Flickable"/>
         </comps>
         <size>(3,3)</size>
@@ -46,10 +63,10 @@
             <Steel>2000</Steel>
             <Uranium>500</Uranium>
             <Plasteel>1000</Plasteel>
-            <Gold>200</Gold>
+            <Gold>1000</Gold>
             <Silver>5000</Silver>
             <ComponentIndustrial>10</ComponentIndustrial>
-            <ComponentSpacer>4</ComponentSpacer>
+            <ComponentSpacer>20</ComponentSpacer>
         </costList>
         <hasInteractionCell>False</hasInteractionCell>
         <designationCategory>Power</designationCategory>

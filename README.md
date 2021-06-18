@@ -1,70 +1,26 @@
-# Rimworld Stargate
-WARNING: This mod uses the Rimworld Base Save Functionality in ways that it was never designed to support, 
-mainly saving specific things into a separate file instead of saving everything on the map to one file at 
-once. Because of this there may be adverse effects. The main one that I have found is that after traveling 
-through the Stargate Social opinions relating to that colonist will be lost, they will effectively be 
-meeting everyone for the first time again. At this time I do not know of a practical way to resolve this issue.
+# Rimworld ZPM (Zero-Point Module)
+**Warning:** The ZPM manipulates the very fundamental basis of the space/time reality construct. Use it at your own risk!
 
-The Stargate system allows you to transport materials over the great distances between colonies.
+Because of this there may be adverse effects. The main danger that you *will* experience, at about once every 3-5 years, 
+is that if the Dark Energy Reserve gets above 80%, you are at risk for a huge *explosion* anywhere along the connected grid.
+If the explosion occurs inside, it will usually instantly kill any pawn within 5-6 tiles and, at full 25,000+25,000 capacitance,
+ignite a fireball of about 10-15 tiles in diameter, instantly raising indoor tempatures to > 2,000 F and igniting everything --
+and everyone -- in the vicinity. Fire poppers are mandatory.
+
+When used in conjunction with the Stargate, you will NOT need to wait to charge the Stargate (~20,000 kW), and in the future,
+it will also allow intergalactic wormhole travel (e.g., across our Internet).
+
+---
+
+This mod also adds an Artifacts Orbital Trade Ship, which specializes in Archotech of all kinds, including previously non-buyable
+artifacts, such as the Venometric Battery (which also sucks 1,000 w from the Zero-Point Field).
+
+---
+
+The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wiki/Zero-point_energy for more.
 
 ## Change Log
 
-01.00.00
+v1.0.0: 2021-06-17
 * Initial Release
 
-01.00.01
-* Fixing crash when loading with Stargates that locally have things in the Buffer.
-
-02.00.00
-* Alpha 14 Update
-
-02.00.01
-* Fix for potentially not loading Graphical Resources on loading a saved game.
-
-02.00.02
-* Building against 1249
-
-02.00.03
-* Alpha 15 Update (only had to change the supported version number)
-
-02.00.04
-* Alpha 16 Update (lots of small compatibility changes, esp regarding multiple maps).
-
-03.00.00
-* Alpha 16: Reworked the Offworld Gate so that when it's activated, all higher 
-  lifeforms on the map are damaged by a huge psionic blast.
-
---------------------------------------------------------------------------------------
-
-04.00.00
-* Officially forked from jaxxa/ED-Stargate.
-
-04.01.00
-* Alpha 17 Update (v0.17.1557)
-
-04.02.00
-* Beta 18 Update (v0.18.1722)
-
-04.03.00
-* Beta 19 Update (v0.19.2009)
-
-04.04.00
-* v1.0 Update (v1.0.2559)
-* Fixed the "inspect string for * contains empty lines" console error.
-* Fixed all of the "can't assign items to a faction" error messages.
-* Fixed the bug since B19 where colonists went *crazy* if they had ever been drafted.
-
-05.00.00
-* Made the Stargate research much more difficult to achieve.
-* The Off-world Gate will no longer allow outgoing travel.
-* The Off-world Gate now falls into ruin upon the first off-world recall.
-* The cost for constructing the Stargate has been greatly, and appropriately, increased.
-* Only one Off-world Gate is allowed per area.
-* Lots of code cleanup.
-
-## Contributors
-
-This mod is forked off of the incredible engineering work by Jaxxa in his [**ED-Stargate mod**](https://github.com/jaxxa/ED-Stargate).
-I asked him for years to port this to A16, but then I learned C# and ported it myself ;-)
-
-Then I made it even better!

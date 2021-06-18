@@ -21,15 +21,12 @@ namespace BetterRimworlds.ZPM
 
         #region Variables
 
-        protected static Texture2D UI_POWER_UP;
-        protected static Texture2D UI_POWER_DOWN;
-
         private static Dictionary<string, Graphic> chargeGraphics = new Dictionary<string, Graphic>();
 
         CompPowerBattery power;
 
-        int currentCapacitorCharge = 7500;
-        int maxCapacitorCharge = 20000;
+        int darkEnergyReserve = 7500;
+        int maxDarkEnergy = 20000;
 
         protected Map currentMap;
 
@@ -37,9 +34,7 @@ namespace BetterRimworlds.ZPM
 
         static Building_ZPM()
         {
-            UI_POWER_UP = ContentFinder<Texture2D>.Get("UI/PowerUp", true);
-            UI_POWER_DOWN = ContentFinder<Texture2D>.Get("UI/PowerDown", true);
-
+            var a = new StockGenerator_SingleDef();
             string[] powerStates = { "Depleted", "25%", "50%", "75%", "Full" };
             foreach (var powerState in powerStates)
             {
@@ -64,35 +59,35 @@ namespace BetterRimworlds.ZPM
             this.power = base.GetComp<CompPowerBattery>();
         }
 
-        // protected void BaseTickRare()
-        // {
-        //     base.TickRare();
-        // }
-        //
-        // public override void TickRare()
-        // {
-        //     base.TickRare();
-        //     if (this.power.PowerOn)
-        //     {
-        //         // Charge using all the excess energy on the grid.
-        //         // Log.Error("Net Power: " + this.power.);
-        //         // currentCapacitorCharge += (int) (this.power.PowerNet.CurrentEnergyGainRate() / 1000);
-        //     }
-        //     
-        //     this.power.PowerNet.CurrentEnergyGainRate()
-        //
-        //     if (currentCapacitorCharge > maxCapacitorCharge)
-        //     {
-        //         currentCapacitorCharge = maxCapacitorCharge;
-        //     }
-        //
-        //     if (this.currentCapacitorCharge < 0)
-        //     {
-        //         this.currentCapacitorCharge = 0;
-        //         this.chargeSpeed = 0;
-        //         this.updatePowerDrain();
-        //     }
-        // }
+        protected void BaseTickRare()
+        {
+            base.TickRare();
+        }
+        
+        public override void TickRare()
+        {
+            base.TickRare();
+            if (this.power.PowerNet.CurrentEnergyGainRate() > 0.01f)
+            {
+                // Charge using all the excess energy on the grid.
+                // Log.Error("Net Power: " + this.power.);
+                darkEnergyReserve += 100;
+            }
+            
+            if (darkEnergyReserve > maxDarkEnergy)
+            {
+                darkEnergyReserve = maxDarkEnergy;
+            }
+            
+            if (this.power.StoredEnergyPct < 0.75f && darkEnergyReserve >= 1000)
+            {
+                this.power.AddEnergy(darkEnergyReserve);
+                darkEnergyReserve = 0;
+            }
+            
+            Log.Error("Current Energy Gain Rate: " + this.power.PowerNet.CurrentEnergyGainRate());
+            Log.Error("Stored Energy: " + this.power.StoredEnergy);
+        }
 
         #endregion
 
@@ -165,6 +160,11 @@ namespace BetterRimworlds.ZPM
         {
             get
             {
+                // For when it's minified or in a trade ship.
+                if (this.power == null)
+                {
+                    return base.DefaultGraphic;
+                }
                 // var chargePercent = (int) ((float) this.currentCapacitorCharge / (float) this.maxCapacitorCharge) * 100;
                 var chargePercent = (int) (this.power.StoredEnergyPct * 100);
                 if (chargePercent <= 10)
@@ -192,7 +192,7 @@ namespace BetterRimworlds.ZPM
         public override string GetInspectString()
         {
             return base.GetInspectString() + "\n"
-                + "Capacitor Charge: " + this.currentCapacitorCharge + " / " + this.maxCapacitorCharge;
+                + "Dark Energy Reserve: " + this.darkEnergyReserve + " / " + this.maxDarkEnergy;
         }
 
         #endregion

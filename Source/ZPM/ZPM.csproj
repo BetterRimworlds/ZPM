@@ -55,7 +55,64 @@
     <Compile Include="ZPM\Building_ZPM.cs" />
     <Compile Include="ZPM\ZPMThingDef.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="..\..\ZPM\.idea\.idea.ZPM.dir">
+      <Link>ZPM\.idea\.idea.ZPM.dir</Link>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\ZPM\About\About.xml">
+      <Link>ZPM\About\About.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\About\Preview.png">
+      <Link>ZPM\About\Preview.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\About\PublishedFileId.txt">
+      <Link>ZPM\About\PublishedFileId.txt</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Defs\Incidents_LetsGoExplore.xml">
+      <Link>ZPM\Defs\Incidents_LetsGoExplore.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Defs\ResearchProjectDefs\ResearchProjects.xml">
+      <Link>ZPM\Defs\ResearchProjectDefs\ResearchProjects.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Defs\Sites\ThingSetMakers_ZPM.xml">
+      <Link>ZPM\Defs\Sites\ThingSetMakers_ZPM.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Defs\ThingDefs\Building_ZPM.xml">
+      <Link>ZPM\Defs\ThingDefs\Building_ZPM.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Defs\TraderKindDefs\TraderArtifacts.xml">
+      <Link>ZPM\Defs\TraderKindDefs\TraderArtifacts.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Defs\WorldObjects\WorldObjects.xml">
+      <Link>ZPM\Defs\WorldObjects\WorldObjects.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Patches\Patches_MakeBuyable.xml">
+      <Link>ZPM\Patches\Patches_MakeBuyable.xml</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\Things\Buildings\ZPM-25%.png">
+      <Link>ZPM\Textures\Things\Buildings\ZPM-25%.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\Things\Buildings\ZPM-50%.png">
+      <Link>ZPM\Textures\Things\Buildings\ZPM-50%.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\Things\Buildings\ZPM-75%.png">
+      <Link>ZPM\Textures\Things\Buildings\ZPM-75%.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\Things\Buildings\ZPM-Depleted.png">
+      <Link>ZPM\Textures\Things\Buildings\ZPM-Depleted.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\Things\Buildings\ZPM-Full.png">
+      <Link>ZPM\Textures\Things\Buildings\ZPM-Full.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\Things\Buildings\ZPM.png">
+      <Link>ZPM\Textures\Things\Buildings\ZPM.png</Link>
+    </Content>
+    <Content Include="..\..\ZPM\Textures\UI\Icons\ZPM.png">
+      <Link>ZPM\Textures\UI\Icons\ZPM.png</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
