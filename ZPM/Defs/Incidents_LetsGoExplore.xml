@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<IncidentDef>
+		<defName>LostCityLGE</defName>
+		<label>lost city</label>
+		<category>GiveQuest</category>
+		<targetTags>
+			<li>World</li>
+		</targetTags>
+		<workerClass>LetsGoExplore.IncidentWorker_LostCityLGE</workerClass>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>380.00</baseChance>
+		<minRefireDays>45</minRefireDays>
+		<earliestDay>60</earliestDay>
+		<minDifficulty>1</minDifficulty>
+		<minPopulation>6</minPopulation>
+		<chanceFactorByPopulationCurve>
+			<points>
+				<li>(5,0)</li>
+				<li>(9,1)</li>
+			</points>
+		</chanceFactorByPopulationCurve>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>PrisonCampLGE</defName>
+		<label>Prison camp</label>
+		<category>GiveQuest</category>
+		<targetTags>
+			<li>World</li>
+		</targetTags>
+		<workerClass>LetsGoExplore.IncidentWorker_PrisonCampLGE</workerClass>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>0.3</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<earliestDay>45</earliestDay>
+		<minPopulation>5</minPopulation>
+		<chanceFactorByPopulationCurve>
+			<points>
+				<li>(3,0)</li>
+				<li>(6,1)</li>
+			</points>
+		</chanceFactorByPopulationCurve>
+	</IncidentDef>
+</Defs>
