@@ -16,6 +16,7 @@
         <graphicData>
             <texPath>Things/Buildings/ZPM</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
         </graphicData>
         <iconPath>UI/Icons/ZPM</iconPath>
         <techLevel>Archotech</techLevel>

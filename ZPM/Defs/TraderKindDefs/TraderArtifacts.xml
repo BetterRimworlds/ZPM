@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<TraderKindDef>
 		<defName>ArtifactsTrader</defName>
 		<label>Artifacts Trader</label>
@@ -13,7 +12,7 @@
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Gold</thingDef>
-				<countRange>100~500</countRange<name />
+				<countRange>100~500</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Hyperweave</thingDef>
@@ -32,15 +31,12 @@
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<price>Expensive</price>
-				<thingDef>ArcotechZPM</thingDef>
-				<countRange>
-					<min>1</min>
-					<max>2</max>
-				</countRange>
+				<thingDef>ArchotechZPM</thingDef>
+				<countRange>1</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>VanometricPowerCell</thingDef>
-				<countRange>1</countRange>
+				<countRange>1~3</countRange>
 			</li>
 			<li Class="StockGenerator_BuyExpensiveSimple" />
 			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
