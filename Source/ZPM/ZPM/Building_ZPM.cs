@@ -25,8 +25,8 @@ namespace BetterRimworlds.ZPM
 
         CompPowerBattery power;
 
-        int darkEnergyReserve = 7500;
-        int maxDarkEnergy = 20000;
+        private int darkEnergyReserve = 7500;
+        private int maxDarkEnergy = -1;
 
         protected Map currentMap;
 
@@ -57,6 +57,7 @@ namespace BetterRimworlds.ZPM
             base.SpawnSetup(map, respawningAfterLoad);
 
             this.power = base.GetComp<CompPowerBattery>();
+            this.maxDarkEnergy = (int) Math.Ceiling(this.power.Props.storedEnergyMax * 1.25);
         }
 
         protected void BaseTickRare()
@@ -70,7 +71,6 @@ namespace BetterRimworlds.ZPM
             if (this.power.PowerNet.CurrentEnergyGainRate() > 0.01f)
             {
                 // Charge using all the excess energy on the grid.
-                // Log.Error("Net Power: " + this.power.);
                 darkEnergyReserve += 100;
             }
             
@@ -85,8 +85,8 @@ namespace BetterRimworlds.ZPM
                 darkEnergyReserve = 0;
             }
             
-            Log.Error("Current Energy Gain Rate: " + this.power.PowerNet.CurrentEnergyGainRate());
-            Log.Error("Stored Energy: " + this.power.StoredEnergy);
+            // Log.Error("Current Energy Gain Rate: " + this.power.PowerNet.CurrentEnergyGainRate());
+            // Log.Error("Stored Energy: " + this.power.StoredEnergy);
         }
 
         #endregion

@@ -18,7 +18,6 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,3)</drawSize>
         </graphicData>
-        <iconPath>UI/Icons/ZPM</iconPath>
         <techLevel>Archotech</techLevel>
         <stackLimit>1</stackLimit>
         <minifiedDef>MinifiedThing</minifiedDef>
@@ -33,7 +32,7 @@
         <statBases>
             <WorkToMake>30000</WorkToMake>
             <MaxHitPoints>1000000</MaxHitPoints>
-            <MarketValue>20000.5</MarketValue>
+            <MarketValue>10000.5</MarketValue>
             <Flammability>0.0</Flammability>
 	        <Mass>20</Mass>
         </statBases>
@@ -72,6 +71,5 @@
         <hasInteractionCell>False</hasInteractionCell>
         <designationCategory>Power</designationCategory>
         <staticSunShadowHeight>0.75</staticSunShadowHeight>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     </ThingDef>
 </Defs>
