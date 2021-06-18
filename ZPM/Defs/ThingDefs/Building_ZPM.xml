@@ -39,9 +39,6 @@
         <description>Converts Dark Energy into electricity and stores amazing amounts of power. Solar flare proof.</description>
 	    <tradeability>Buyable</tradeability>
             <tradeNeverStack>true</tradeNeverStack>
-        <researchPrerequisites>
-            <li>Building_ZPM_research</li>
-        </researchPrerequisites>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
         <comps>
