@@ -1,4 +1,26 @@
 # Rimworld ZPM (Zero-Point Module)
+
+The Archotech ZPM slowly converts Dark Energy into electricity, for free, but has an outsided capacity of 20,000 Watts.
+It also steadily draws power from the Zero-Point Energy Field and stores it a highly charged pocket of subspace.
+
+It is capable of powering an entire settlement for days on end..
+
+![Archotech ZPM](https://raw.githubusercontent.com/BetterRimworlds/ZPM/master/ZPM/About/Preview.png)
+
+**ALERT: The transdimensional conduits of the ZPM can have *devastating* consequences for all higher lifeforms on the map!** 
+        
+It is highly recommended that you do not allow it to get above 75% full capacity.
+
+Non Steam Downloads and GitHub Repositories of this mod is available at: https://github.com/BetterRimworlds/Archotech-ZPM/
+
+If you already have the BetterRimworld's Stargate mod, you will be able to research how to build your own ZPMs, at a considerable
+cost. See https://github.com/BetterRimworlds/Rimworld-Stargate
+
+Want your pawns to live forever young and healthy? Check out BetterRimworld's Cryogenesis:
+https://github.com/BetterRimworlds/CryoRegenesis
+
+---
+
 **Warning:** The ZPM manipulates the very fundamental basis of the space/time reality construct. Use it at your own risk!
 
 Because of this there may be adverse effects. The main danger that you *will* experience, at about once every 3-5 years, 
