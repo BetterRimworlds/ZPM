@@ -39,11 +39,16 @@ namespace BetterRimworlds.ZPM
             foreach (var powerState in powerStates)
             {
                 var graphic = new Graphic_Single();
-
+#if RIMWORLD12
                 GraphicRequest request = new GraphicRequest(Type.GetType("Graphic_Single"),
                     $"Things/Buildings/ZPM-{powerState}", ShaderDatabase.DefaultShader, new Vector2(1, 2), Color.white,
                     Color.white, new GraphicData(), 0, null);
-
+#endif
+#if RIMWORLD13
+                GraphicRequest request = new GraphicRequest(Type.GetType("Graphic_Single"),
+                    $"Things/Buildings/ZPM-{powerState}", ShaderDatabase.DefaultShader, new Vector2(1, 2), Color.white,
+                    Color.white, new GraphicData(), 0, null, null);
+#endif
                 graphic.Init(request);
                 chargeGraphics.Add(powerState, graphic);
             }

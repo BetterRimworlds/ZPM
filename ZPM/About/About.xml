@@ -8,7 +8,7 @@
     </supportedVersions>
     <author>HopeSeekr</author>
     <url>https://github.com/BetterRimworlds/ZPM/</url>
-    <description>Version: 1.0.0
+    <description>Version: 1.1.0
 The Archotech ZPM slowly converts Dark Energy into electricity, for free, but has an outsided capacity of 20,000 Watts.
 It also steadily draws power from the Zero-Point Energy Field and stores it a highly charged pocket of subspace.
 
@@ -18,12 +18,14 @@ It is capable of powering an entire settlement for days on end..
         
 It is highly recommended that you do not allow it to get above 75% full capacity.
 
-Non Steam Downloads and GitHub Repositories of this mod is available at: https://github.com/BetterRimworlds/Archotech-ZPM/
+Non Steam Downloads and GitHub Repositories of this mod is available at: https://github.com/BetterRimworlds/ZPM/
 
 If you already have the BetterRimworld's Stargate mod, you will be able to research how to build your own ZPMs, at a considerable
 cost. See https://github.com/BetterRimworlds/Rimworld-Stargate
 
 Want your pawns to live forever young and healthy? Check out BetterRimworld's Cryogenesis:
 https://github.com/BetterRimworlds/CryoRegenesis
+
+
     </description>
 </ModMetaData>

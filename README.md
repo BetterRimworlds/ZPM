@@ -46,3 +46,8 @@ The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wi
 v1.0.0: 2021-06-17
 * Initial Release
 
+v1.1.0: 2022-01-29
+* Released to Steam Workshop.
+* Ported to the Linux build system for Rimworld mods.
+* Fixed the long-standing sizing bug.
+* Ported to Rimworld v1.3.
