@@ -41,10 +41,27 @@ artifacts, such as the Venometric Battery (which also sucks 1,000 w from the Zer
 
 The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wiki/Zero-point_energy for more.
 
+## Better Rimworlds Stargate Mods
+
+1. [**Stargate**](https://github.com/BetterRimworlds/Stargate) — Send Pawns and Items to other Savegames on the same computer.
+2. [**DeMaterializer**](https://github.com/BetterRimworlds/DeMaterializer) — Teleport and Store pawns and things in quantum storage.
+3. [**CryoRegenesis**](https://github.com/BetterRimworlds/CryoRegenesis) — Forever Young Glittertech (a Rimworld take on the Goa'uld Sarcophagus).
+4. [**ZPM**](https://github.com/BetterRimworlds/ZPM) — Build your own or buy an Archotech Zero-Point Module (Stargate Atlantis).
+5. [**ZatGun**](https://github.com/BetterRimworlds/ZatGun) — An actual Zat'nik'tel, from the Stargate Universe. One shot stuns. Two shots kills.
+
+## Other Better Rimworlds Mods
+
+1. [**WakeUp Implant**](https://github.com/BetterRimworlds/WakeUpImplant) — Installs a brain implant that gives the effects of a permanent wakeup high.
+2. [**Uplifted Animals**](https://github.com/BetterRimworlds/UpliftedAnimals) — Upgrade animals to sentience and they can help more around the base.
+3. [**Savegame Shrinker**]() — Cleans up unnecessary data from long-running Savegames.
+
 ## Change Log
 
+v1.3.0: 2024-03-14
+* Upgraded to Rimworld v1.5.
+
 v1.2.0: 2023-01-21
-* Ported to Rimworld v1.4.
+* Upgraded to Rimworld v1.4.
 
 v1.1.0: 2022-01-29
 * Released to Steam Workshop.
