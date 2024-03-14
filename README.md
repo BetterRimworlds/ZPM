@@ -59,6 +59,8 @@ The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wi
 
 v1.3.0: 2024-03-14
 * Upgraded to Rimworld v1.5.
+* Refactored to make more compatible with other mods.
+* Use up the dark energy reserves gradually instead of all at once.
 
 v1.2.0: 2023-01-21
 * Upgraded to Rimworld v1.4.

@@ -93,8 +93,8 @@ namespace BetterRimworlds.ZPM
             
             if (this.power.StoredEnergyPct < 0.75f && darkEnergyReserve >= 1000)
             {
-                this.power.AddEnergy(darkEnergyReserve);
-                darkEnergyReserve = 0;
+                this.power.AddEnergy(1000f);
+                darkEnergyReserve -= 1000;
             }
             
             // Log.Error("Current Energy Gain Rate: " + this.power.PowerNet.CurrentEnergyGainRate());
