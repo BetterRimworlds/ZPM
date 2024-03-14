@@ -12,13 +12,13 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using UnityEngine;
 using RimWorld;
 
 namespace BetterRimworlds.ZPM
 {
-
     [StaticConstructorOnStartup]
     class Building_ZPM : Building
     {
@@ -44,7 +44,11 @@ namespace BetterRimworlds.ZPM
 
         static Building_ZPM()
         {
-            var a = new StockGenerator_SingleDef();
+            if (Building_ZPM.chargeGraphics.Any())
+            {
+                return;
+            }
+
             string[] powerStates = { "Depleted", "25%", "50%", "75%", "Full" };
             foreach (var powerState in powerStates)
             {
@@ -74,14 +78,8 @@ namespace BetterRimworlds.ZPM
             this.maxDarkEnergy = (int) Math.Ceiling(this.power.Props.storedEnergyMax * 1.25);
         }
 
-        protected void BaseTickRare()
-        {
-            base.TickRare();
-        }
-        
         public override void TickRare()
         {
-            base.TickRare();
             if (this.power.PowerNet.CurrentEnergyGainRate() > 0.01f)
             {
                 // Charge using all the excess energy on the grid.
@@ -101,70 +99,8 @@ namespace BetterRimworlds.ZPM
             
             // Log.Error("Current Energy Gain Rate: " + this.power.PowerNet.CurrentEnergyGainRate());
             // Log.Error("Stored Energy: " + this.power.StoredEnergy);
+            base.TickRare();
         }
-
-        #endregion
-
-        #region Commands
-
-        // protected IEnumerable<Gizmo> GetDefaultGizmos()
-        // {
-        //     return base.GetGizmos();
-        // }
-        //
-        // public override IEnumerable<Gizmo> GetGizmos()
-        // {
-        //     // Add the stock Gizmoes
-        //     foreach (var g in base.GetGizmos())
-        //     {
-        //         yield return g;
-        //     }
-        //
-        //     if (true)
-        //     {
-        //         Command_Action act = new Command_Action();
-        //         //act.action = () => Designator_Deconstruct.DesignateDeconstruct(this);
-        //         act.action = () => this.PowerRateIncrease();
-        //         act.icon = UI_POWER_UP;
-        //         act.defaultLabel = "Increase Power";
-        //         act.defaultDesc = "Increase Power";
-        //         act.activateSound = SoundDef.Named("Click");
-        //         //act.hotKey = KeyBindingDefOf.DesignatorDeconstruct;
-        //         //act.groupKey = 689736;
-        //         yield return act;
-        //     }
-        //
-        //     if (true)
-        //     {
-        //         Command_Action act = new Command_Action();
-        //         //act.action = () => Designator_Deconstruct.DesignateDeconstruct(this);
-        //         act.action = () => this.PowerRateDecrease();
-        //         act.icon = UI_POWER_DOWN;
-        //         act.defaultLabel = "Decrease Power";
-        //         act.defaultDesc = "Decrease Power";
-        //         act.activateSound = SoundDef.Named("Click");
-        //         //act.hotKey = KeyBindingDefOf.DesignatorDeconstruct;
-        //         //act.groupKey = 689736;
-        //         yield return act;
-        //     }
-        // }
-
-        // private void PowerRateIncrease()
-        // {
-        //     this.chargeSpeed += 1;
-        //     this.updatePowerDrain();
-        // }
-
-        // private void PowerRateDecrease()
-        // {
-        //     this.chargeSpeed -= 1;
-        //     this.updatePowerDrain();
-        // }
-
-        // private void updatePowerDrain()
-        // {
-        //     this.power.powerOutputInt = -1000 * this.chargeSpeed;
-        // }
 
         #endregion
 
