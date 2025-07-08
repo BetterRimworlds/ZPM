@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net472;net9.0</TargetFrameworks>
+    <TargetFrameworks>net472</TargetFrameworks>
     <LangVersion>10</LangVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>ZPM</RootNamespace>
@@ -9,8 +9,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <FileAlignment>512</FileAlignment>
     <Nullable>enable</Nullable>
-    <!-- Base output path for RimWorld mod -->
-    <BaseOutputPath>$(SolutionDir)rimworld</BaseOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <!-- Configuration-specific settings -->
