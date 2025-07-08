@@ -57,6 +57,10 @@ The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wi
 
 ## Change Log
 
+v1.4.0:
+* **[2025-07-07 18:05:20 CDT]** Added support for Rimworld v1.6.
+* **[2025-07-07 18:21:58 CDT]** Migrated to a modern dotnet SDK project.
+
 v1.3.0: 2024-03-14
 * Upgraded to Rimworld v1.5.
 * Refactored to make more compatible with other mods.
