@@ -1,5 +1,5 @@
 /*
- * This file is part of Uplifted Animals, a Better Rimworlds Project.
+ * This file is part of ZPM, a Better Rimworlds Project.
  *
  * Copyright © 2021-2025 Theodore R. Smith
  * Author: Theodore R. Smith <hopeseekr@gmail.com>
@@ -19,8 +19,6 @@ namespace BetterRimworlds.ZPM;
 [StaticConstructorOnStartup]
 class Building_ZPM : Building
 {
-    const int ADDITION_DISTANCE = 3;
-
     private static Dictionary<string, Graphic> chargeGraphics = new Dictionary<string, Graphic>();
 
     CompPowerBattery power;
@@ -42,11 +40,11 @@ class Building_ZPM : Building
         {
             var graphic = new Graphic_Single();
         #if RIMWORLD12
-            GraphicRequest request = new GraphicRequest(Type.GetType("Graphic_Single"),
+            var request = new GraphicRequest(Type.GetType("Graphic_Single"),
                 $"Things/Buildings/ZPM-{powerState}", ShaderDatabase.DefaultShader, new Vector2(1, 2), Color.white,
                 Color.white, new GraphicData(), 0, null);
         #else
-            GraphicRequest request = new GraphicRequest(Type.GetType("Graphic_Single"),
+            var request = new GraphicRequest(Type.GetType("Graphic_Single"),
                 $"Things/Buildings/ZPM-{powerState}", ShaderDatabase.DefaultShader, new Vector2(1, 2), Color.white,
                 Color.white, new GraphicData(), 0, null, null);
         #endif
@@ -98,34 +96,15 @@ class Building_ZPM : Building
     {
         get
         {
-            // For when it's minified or in a trade ship.
-            if (this.power == null)
-            {
-                return base.DefaultGraphic;
-            }
-
-            // var chargePercent = (int) ((float) this.currentCapacitorCharge / (float) this.maxCapacitorCharge) * 100;
             var chargePercent = (int) (this.power.StoredEnergyPct * 100);
-            if (chargePercent <= 10)
+            return chargePercent switch
             {
-                return Building_ZPM.chargeGraphics["Depleted"];
-            }
-            else if (chargePercent <= 25)
-            {
-                return Building_ZPM.chargeGraphics["25%"];
-            }
-            else if (chargePercent <= 50)
-            {
-                return Building_ZPM.chargeGraphics["50%"];
-            }
-            else if (chargePercent <= 75)
-            {
-                return Building_ZPM.chargeGraphics["75%"];
-            }
-            else
-            {
-                return Building_ZPM.chargeGraphics["Full"];
-            }
+                <= 10 => Building_ZPM.chargeGraphics["Depleted"],
+                <= 25 => Building_ZPM.chargeGraphics["25%"],
+                <= 50 => Building_ZPM.chargeGraphics["50%"],
+                <= 75 => Building_ZPM.chargeGraphics["75%"],
+                _ => Building_ZPM.chargeGraphics["Full"]
+            };
         }
     }
     public override string GetInspectString()
