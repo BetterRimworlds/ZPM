@@ -102,6 +102,7 @@ public class CompZPMBattery : CompPowerBattery
             // Calculate base discharge chance (you may need to adjust this value)
             float baseDischargeChance = 0.00005f;
             float exposedDischargeChance = baseDischargeChance * ZPMProps.exposedDischargeMultiplier;
+            float inducedSolarFlareChance = 0.00025f;
 
             if (Find.TickManager.TicksGame - this.lastUnroofWarningTick >= 2500 * 6)
             {
@@ -114,7 +115,31 @@ public class CompZPMBattery : CompPowerBattery
                 TriggerZPMDischargeIncident();
                 TriggerDischarge();
             }
+
+            if (this.detectSolarFlare() == false && Rand.Chance(inducedSolarFlareChance))
+            {
+                TriggerZPMInducedSolarFlare();
+            }
         }
+    }
+
+    private void TriggerZPMInducedSolarFlare()
+    {
+        // 1. Cause the flare
+        int duration = BetterRandom.pick(8 * 2500, 48 * 2500) + BetterRandom.pick(0, 1000);
+        GameCondition flare = GameConditionMaker.MakeCondition(
+            IncidentDefOf.SolarFlare.gameCondition,
+            duration
+        );
+        Find.World.GameConditionManager.RegisterCondition(flare);
+
+
+        // 2. Custom explanation letter
+        Find.LetterStack.ReceiveLetter(
+            "BRW.ZPM.InducedSolarFlare.Title".Translate(),
+            "BRW.ZPM.InducedSolarFlare".Translate(duration.ToStringTicksToPeriod()),
+            LetterDefOf.ThreatBig,
+            parent);
     }
 
     private void TriggerZPMDischargeIncident()
@@ -134,7 +159,7 @@ public class CompZPMBattery : CompPowerBattery
         if (incidentDef.Worker.TryExecute(parms))
         {
             Messages.Message("BRW.ZPM.Meltdown".Translate(), parent, MessageTypeDefOf.ThreatBig);
-            Find.WindowStack.Add(new Dialog_MessageBox(message, null, null, null, null, null, true, null));
+            Find.WindowStack.Add(new Dialog_MessageBox(message, null, null, null, null, null, true));
         }
     }
 

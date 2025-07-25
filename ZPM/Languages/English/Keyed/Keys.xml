@@ -9,4 +9,21 @@ The Zero Point Module's quantum vacuum extraction chamber has suffered a catastr
 
 The ZPM's naquadah-enhanced control crystals have been severely damaged by the quantum backlash, requiring extensive repairs before the device can safely resume zero-point energy extraction operations.</BRW.ZPMDischarge.Letter>
     <BRW.ZPM.Discharge.Warning>The {0} is suffering from atmospheric exposure and may discharge catastrophically!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Other ZPM related messages -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM‑Induced Solar Flare</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM‑Induced Solar Flare
+
+        The Zero‑Point Module was left unshielded beneath open sky. Its quantum‑vacuum
+        conduits phase‑locked with the system star’s magnetosphere, triggering an
+        artificial coronal mass ejection.
+
+        Mitigation:
+
+        1. Re‑roof or relocate the module to a fully enclosed, roofed room.
+        2. Wait out the flare ({0}).
+        3. Repair damaged crystals before re‑activation.
+    </BRW.ZPM.InducedSolarFlare>
 </LanguageData>
