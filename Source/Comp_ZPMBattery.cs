@@ -10,8 +10,6 @@
  * Most rights are reserved.
  */
 
-using System;
-using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -33,6 +31,7 @@ public class CompProperties_ZPMBattery : CompProperties_Battery
 public class CompZPMBattery : CompPowerBattery
 {
     private CompProperties_ZPMBattery ZPMProps => (CompProperties_ZPMBattery)props;
+    private int lastUnroofWarningTick;
 
     private int darkEnergyReserve = 7500; // Starting dark energy reserve
     private int maxDarkEnergy = -1; // Will be calculated based on storedEnergyMax
@@ -62,6 +61,8 @@ public class CompZPMBattery : CompPowerBattery
 
         // Handle dark energy charging and discharging
         HandleDarkEnergyMechanics();
+
+        CheckExposedDischarge();
     }
 
     private void HandleDarkEnergyMechanics()
@@ -89,6 +90,164 @@ public class CompZPMBattery : CompPowerBattery
         }
     }
 
+    private void CheckExposedDischarge()
+    {
+        // Only check if battery is charged and can potentially discharge
+        if (StoredEnergy <= 0f) return;
+
+        bool isRoofed = parent.Map.roofGrid.Roofed(parent.Position);
+
+        if (!isRoofed)
+        {
+            // Calculate base discharge chance (you may need to adjust this value)
+            float baseDischargeChance = 0.00005f;
+            float exposedDischargeChance = baseDischargeChance * ZPMProps.exposedDischargeMultiplier;
+
+            if (Find.TickManager.TicksGame - this.lastUnroofWarningTick >= 2500 * 6)
+            {
+                Messages.Message("BRW.ZPM.Discharge.Warning".Translate(parent.LabelShort), MessageTypeDefOf.NeutralEvent);
+                this.lastUnroofWarningTick = Find.TickManager.TicksGame;
+            }
+
+            if (Rand.Chance(exposedDischargeChance))
+            {
+                TriggerZPMDischargeIncident();
+                TriggerDischarge();
+            }
+        }
+    }
+
+    private void TriggerZPMDischargeIncident()
+    {
+        // Create and trigger the major disaster incident
+        string message = "BRW.ZPMDischarge.Letter".Translate();
+        IncidentParms parms = new IncidentParms
+        {
+            target = parent.Map,
+            forced = true,
+            spawnCenter = parent.Position,
+            customLetterText = message,
+        };
+
+
+        IncidentDef incidentDef = DefDatabase<IncidentDef>.GetNamed("BRW_ZPMDischarge");
+        if (incidentDef.Worker.TryExecute(parms))
+        {
+            Messages.Message("BRW.ZPM.Meltdown".Translate(), parent, MessageTypeDefOf.ThreatBig);
+            Find.WindowStack.Add(new Dialog_MessageBox(message, null, null, null, null, null, true, null));
+        }
+    }
+
+    private void TriggerDischarge()
+    {
+        // Find all connected power conduits and select random discharge location
+        IntVec3 dischargeLocation = GetRandomPowerGridLocation();
+
+        // Calculate explosion radius based on dark energy reserve
+        float baseRadius = 20f;
+        float bonusRadius = darkEnergyReserve / 5000f;
+        float totalRadius = baseRadius + bonusRadius;
+
+        // Use the existing battery discharge mechanism
+        if (StoredEnergy > 0f)
+        {
+            // Create the explosion effect at the random grid location
+            GenExplosion.DoExplosion(
+                center: dischargeLocation,
+                map: parent.Map,
+                radius: totalRadius,
+                damType: DamageDefOf.Bomb,
+                instigator: parent,
+                damAmount: Mathf.RoundToInt(StoredEnergy / 100f), // Scale damage with stored energy
+                armorPenetration: 0.5f,
+                weapon: null,
+                projectile: null,
+                intendedTarget: null,
+                postExplosionSpawnThingDef: null,
+                postExplosionSpawnChance: 0f,
+                postExplosionSpawnThingCount: 0,
+                applyDamageToExplosionCellsNeighbors: true,
+                preExplosionSpawnThingDef: null,
+                preExplosionSpawnChance: 0f,
+                preExplosionSpawnThingCount: 0,
+                chanceToStartFire: 1f,
+                damageFalloff: true
+            );
+
+            // Completely drain the battery
+            DrawPower(StoredEnergy);
+
+            // Damage the ZPM instead of destroying it (20-95% damage)
+            float damagePercent = Rand.Range(0.20f, 0.95f);
+            int damageAmount = Mathf.RoundToInt(parent.MaxHitPoints * damagePercent);
+
+            // Apply the damage to the ZPM
+            var damageInfo = new DamageInfo(
+                DamageDefOf.Bomb,
+                damageAmount,
+                0f, // armor penetration
+                -1f, // angle
+                parent, // instigator
+                null, // hit part
+                null, // weapon
+                DamageInfo.SourceCategory.ThingOrUnknown,
+                parent
+            );
+
+            parent.TakeDamage(damageInfo);
+
+            // Reset dark energy reserve after discharge
+            darkEnergyReserve = 0;
+        }
+    }
+
+    private IntVec3 GetRandomPowerGridLocation()
+    {
+        // Check if PowerNet exists
+        if (PowerNet == null)
+        {
+            return parent.Position;
+        }
+
+        // Collect all transmitter positions (conduits, power sources, etc.)
+        List<IntVec3> powerGridPositions = new List<IntVec3>();
+
+        // Add all power transmitters (conduits)
+        foreach (var compPower in PowerNet.transmitters)
+        {
+            if (compPower?.parent?.Position != null)
+            {
+                powerGridPositions.Add(compPower.parent.Position);
+            }
+        }
+
+        // Add all power batteries
+        foreach (var battery in PowerNet.batteryComps)
+        {
+            if (battery?.parent?.Position != null)
+            {
+                powerGridPositions.Add(battery.parent.Position);
+            }
+        }
+
+        // Add all power generators
+        foreach (var generator in PowerNet.powerComps)
+        {
+            if (generator?.parent?.Position != null && generator.PowerOutput > 0)
+            {
+                powerGridPositions.Add(generator.parent.Position);
+            }
+        }
+
+        // Return random position from the power grid, or ZPM position as fallback
+        if (powerGridPositions.Count > 0)
+        {
+            return powerGridPositions.RandomElement();
+        }
+
+        return parent.Position;
+    }
+
     // Save/Load the dark energy reserve
     public override void PostExposeData()
     {
@@ -108,5 +267,29 @@ public class CompZPMBattery : CompPowerBattery
         }
 
         return baseString + "\n" + darkEnergyString;
+    }
+}
+
+// Custom Incident Worker for ZPM Discharge
+public class IncidentWorker_ZPMDischarge : IncidentWorker
+{
+    protected override bool CanFireNowSub(IncidentParms parms)
+    {
+        return true; // Always can fire when called
+    }
+
+    protected override bool TryExecuteWorker(IncidentParms parms)
+    {
+        Map map = (Map)parms.target;
+
+        string letterText = parms.customLetterText;
+
+        Find.LetterStack.ReceiveLetter(
+            "BRW.ZPMDischarge.Title".Translate(),
+            letterText,
+            LetterDefOf.ThreatBig
+        );
+
+        return true;
     }
 }
