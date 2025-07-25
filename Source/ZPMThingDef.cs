@@ -1,5 +1,5 @@
 ﻿/*
- * This file is part of Uplifted Animals, a Better Rimworlds Project.
+ * This file is part of ZPM, a Better Rimworlds Project.
  *
  * Copyright © 2021-2025 Theodore R. Smith
  * Author: Theodore R. Smith <hopeseekr@gmail.com>

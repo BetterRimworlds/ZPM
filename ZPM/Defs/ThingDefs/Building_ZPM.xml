@@ -33,17 +33,13 @@
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
         <comps>
-            <li Class="CompProperties_Battery">
+            <li Class="BetterRimworlds.ZPM.CompProperties_ZPMBattery">
                 <storedEnergyMax>25000</storedEnergyMax>
-                <efficiency>2.00</efficiency>
+                <efficiency>1.5</efficiency>
                 <transmitsPower>true</transmitsPower>
                 <shortCircuitInRain>false</shortCircuitInRain>
+                <exposedDischargeMultiplier>10</exposedDischargeMultiplier>
             </li>
-<!--            <li Class="CompProperties_Power">-->
-<!--                <compClass>CompPowerTrader</compClass>-->
-<!--                <shortCircuitInRain>false</shortCircuitInRain>-->
-<!--                <basePowerConsumption>2000</basePowerConsumption>-->
-<!--            </li>-->
             <li Class="CompProperties_Flickable"/>
         </comps>
         <size>(1,2)</size>

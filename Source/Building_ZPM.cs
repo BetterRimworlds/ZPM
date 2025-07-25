@@ -21,12 +21,7 @@ class Building_ZPM : Building
 {
     private static Dictionary<string, Graphic> chargeGraphics = new Dictionary<string, Graphic>();
 
-    CompPowerBattery power;
-
-    private int darkEnergyReserve = 7500;
-    private int maxDarkEnergy = -1;
-
-    protected Map currentMap;
+    CompZPMBattery zpmPower = null!;
 
     static Building_ZPM()
     {
@@ -57,35 +52,8 @@ class Building_ZPM : Building
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
-        this.currentMap = map;
         base.SpawnSetup(map, respawningAfterLoad);
-
-        this.power = base.GetComp<CompPowerBattery>();
-        this.maxDarkEnergy = (int) Math.Ceiling(this.power.Props.storedEnergyMax * 1.25);
-    }
-
-    public override void TickRare()
-    {
-        if (this.power.PowerNet.CurrentEnergyGainRate() > 0.01f)
-        {
-            // Charge using all the excess energy on the grid.
-            darkEnergyReserve += 100;
-        }
-
-        if (darkEnergyReserve > maxDarkEnergy)
-        {
-            darkEnergyReserve = maxDarkEnergy;
-        }
-
-        if (this.power.StoredEnergyPct < 0.75f && darkEnergyReserve >= 1000)
-        {
-            this.power.AddEnergy(1000f);
-            darkEnergyReserve -= 1000;
-        }
-
-        // Log.Error("Current Energy Gain Rate: " + this.power.PowerNet.CurrentEnergyGainRate());
-        // Log.Error("Stored Energy: " + this.power.StoredEnergy);
-        base.TickRare();
+        this.zpmPower = base.GetComp<CompZPMBattery>();
     }
 
     #endregion
@@ -96,7 +64,7 @@ class Building_ZPM : Building
     {
         get
         {
-            var chargePercent = (int) (this.power.StoredEnergyPct * 100);
+            var chargePercent = (int) (this.zpmPower.StoredEnergyPct * 100);
             return chargePercent switch
             {
                 <= 10 => Building_ZPM.chargeGraphics["Depleted"],
@@ -107,12 +75,6 @@ class Building_ZPM : Building
             };
         }
     }
-    public override string GetInspectString()
-    {
-        return base.GetInspectString() + "\n"
-            + "Dark Energy Reserve: " + this.darkEnergyReserve + " / " + this.maxDarkEnergy;
-    }
 
     #endregion
 }
-
