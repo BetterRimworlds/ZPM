@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM-moduuli moduuli -->
+    <BRW.ZPM.DarkEnergyReserve>Nullipisteen energiatallenne</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM-tyhjentämisen onnettomuus -->
+    <BRW.ZPM.Meltdown>ZPM-moduuli on sulanut!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM-moduulin tyhjentäminen</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter> ZPM-moduulin eristysongelma
+
+        ZPM-moduulin kvantti-tyhjiön poimintasektori on kärsinyt katastrofalisella eristysongelmalla: ZPM-moduuli oli turvattomasti ilmakehään laitettu.
+
+        ZPM-moduulin natrium-johtamiskristalli oli vakavasti vaurioitunut kvantin resonanssista, joten on tehtävä suuri määrä korjauksia varmistaaksemme nollapisteen energian poiminnan turvallisen palautuksen.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Laite {0} on ilmakehään laitettu, voi aiheuttaa katastrofaliset sähköiskut!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Muut tiedot ZPM-moduulista -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM-moduulin aiheuttama aurinkotuuli</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM-moduulin aiheuttama aurinkotuuli
+
+        ZPM-moduuli oli turvattomasti ilmakehään laitettu. Sen kvantti-tyhjiön siirto-putki on synkronoinnut itsenäisesti järjestelmän tähtien magnetosfäärin, mikä aiheuttaa aurinkotuulien tekoisesti.
+
+        Vähemmän vaurioittavaa toimenpide:
+
+        1. Lisää kansiota tai siirrä moduli suljetuun tilaan.
+        2. Odota aurinkotuulen loppumista ({0}).
+        3. Korjaa vaurioituneet kristallit palauttamisen ennen.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM-moduulin aiheuttama sähkövirsto</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>ZPM-moduuli ilmakehään laitettuna aiheuttaa ilmakehän lämpenemisen ja sähkövirston {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>
