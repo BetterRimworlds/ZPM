@@ -26,4 +26,7 @@ The ZPM's naquadah-enhanced control crystals have been severely damaged by the q
         2. Wait out the flare ({0}).
         3. Repair damaged crystals before re‑activation.
     </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM-Induced Flashstorm</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>An unroofed ZPM has superheated the atmosphere leading to flashstorms for the next {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

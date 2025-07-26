@@ -103,6 +103,7 @@ public class CompZPMBattery : CompPowerBattery
             float baseDischargeChance = 0.00005f;
             float exposedDischargeChance = baseDischargeChance * ZPMProps.exposedDischargeMultiplier;
             float inducedSolarFlareChance = 0.00025f;
+            float inducedFlashStormChance = 0.0025f;
 
             if (Find.TickManager.TicksGame - this.lastUnroofWarningTick >= 2500 * 6)
             {
@@ -114,13 +115,52 @@ public class CompZPMBattery : CompPowerBattery
             {
                 TriggerZPMDischargeIncident();
                 TriggerDischarge();
+                TriggerZPMInducedSolarFlare();
+
+                return;
             }
 
             if (this.detectSolarFlare() == false && Rand.Chance(inducedSolarFlareChance))
             {
                 TriggerZPMInducedSolarFlare();
+                TriggerZPMInducedFlashStorm();
+
+                return;
+            }
+
+            if (Rand.Chance(inducedFlashStormChance))
+            {
+                TriggerZPMInducedFlashStorm();
             }
         }
+    }
+
+    private void TriggerZPMInducedFlashStorm()
+    {
+        var flashstorm = DefDatabase<IncidentDef>.GetNamed("Flashstorm");
+        // Skip if this version of Rimowrld doesn't have flashstorms (v1.2).
+        if (flashstorm == null)
+        {
+            return;
+        }
+
+        int duration = BetterRandom.pick(1111, 5555);
+        string message = "BRW.ZPM.InducedFlashstorm.Title".Translate(duration.ToStringTicksToPeriod());
+        Log.Message(message);
+
+        GameCondition flare = GameConditionMaker.MakeCondition(
+            flashstorm.gameCondition,
+            duration
+        );
+
+        parent.Map.gameConditionManager.RegisterCondition(flare);
+
+        Find.LetterStack.ReceiveLetter(
+            "BRW.ZPM.InducedFlashstorm.Title".Translate(),
+            "BRW.ZPM.InducedFlashstorm".Translate(duration.ToStringTicksToPeriod()),
+            LetterDefOf.ThreatBig,
+            parent
+        );
     }
 
     private void TriggerZPMInducedSolarFlare()
@@ -139,7 +179,8 @@ public class CompZPMBattery : CompPowerBattery
             "BRW.ZPM.InducedSolarFlare.Title".Translate(),
             "BRW.ZPM.InducedSolarFlare".Translate(duration.ToStringTicksToPeriod()),
             LetterDefOf.ThreatBig,
-            parent);
+            parent
+        );
     }
 
     private void TriggerZPMDischargeIncident()
@@ -284,7 +325,7 @@ public class CompZPMBattery : CompPowerBattery
     public override string CompInspectStringExtra()
     {
         string baseString = base.CompInspectStringExtra();
-        string darkEnergyString = "Dark Energy Reserve: " + this.darkEnergyReserve + " / " + this.maxDarkEnergy;
+        string darkEnergyString = "BRW.ZPM.DarkEnergyReserve".Translate() + ": " + this.darkEnergyReserve + " / " + this.maxDarkEnergy;
 
         if (string.IsNullOrEmpty(baseString))
         {
