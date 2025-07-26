@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Módulo ZPM -->
+    <BRW.ZPM.DarkEnergyReserve>Nullpunkti energiakulu</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- Acidente de Descarga ZPM -->
+    <BRW.ZPM.Meltdown>ZPM modul kütteb!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM moduli kütteb</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter> ZPM moduli isolatsioonikatõrge
+
+        ZPM moduli kvantvakuumextraktiooni sektioon katõrge isolatsioon: ZPM modul oli kaitsetu ja välja toodud õhus.
+
+        ZPM moduli natrium kasvatuva juhtimise kristal oli oluliselt kahjustatud kvantresonantsi tõttu, vajalik on suur määr aegu parandusi, et tagada nullpunkti energiakulu tagasilöög.
+
+    </BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Zaavat {0} on õhus, võib põhjustada katastroofilist ülepingut!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Outras informações relacionadas ao ZPM -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM moduli põhjustatud päikesevõimused</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM moduli põhjustatud päikesevõimused
+
+        ZPM modul oli kaitsetu ja välja toodud õhus. Tema kvantvakuumtranspordi rööp on sünkroniseeritud süsteemi tähtega magnetosfääriga, mis põhjustab päikeseainete umelise emisiooni.
+
+        Vähem kahjustavad meetodid:
+
+        1. Lisa kaitse ja värskenda moduli sulgusse ruumis.
+        2. Oota päikesevõimuse lõppu ({0}).
+        3. Paranda kahjustatud kristalid enne restartimist.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM moduli põhjustatud elektrikasv</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>ZPM moduli kaitsetu kujutus põhjustab atmosfääri ülepingut ja elektrikasv {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Módulo ZPM -->
+    <BRW.ZPM.DarkEnergyReserve>Reserva de Energia Zero Ponto</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- Acidente de Descarga ZPM -->
+    <BRW.ZPM.Meltdown>O módulo Zero Ponto derretido!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Derretimento do módulo Zero Ponto</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter> Falha de isolamento do módulo Zero Ponto
+
+        O compartimento de extração de vácuo quântico do módulo Zero Ponto sofreu falha catastrófica de isolamento: o módulo Zero Ponto foi deixado exposto ao ar aberto.
+
+        O cristal de controle de aumento de sódio no módulo Zero Ponto foi gravemente danificado devido a ressonância quântica, sendo necessário realizar uma grande quantidade de reparos para restaurar com segurança a operação de extração de energia zero ponto.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>O dispositivo {0} está sendo exposto à atmosfera, pode causar descarga catastrófica!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Outras informações relacionadas ao ZPM -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>Flares Solares Induzidos pelo Módulo Zero Ponto</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Flares Solares Induzidos pelo Módulo Zero Ponto
+
+        O módulo Zero Ponto foi deixado exposto ao ar aberto. Seu tubo de condução de vácuo quântico está sincronizado com a magnetosfera da estrela do sistema, causando a liberação artificial de matéria solar.
+
+        Medidas de mitigação:
+
+        1. Reinstale a cobertura ou mova o módulo para uma sala completamente fechada.
+        2. Aguarde até que o flare solar passe ({0}).
+        3. Repare os cristais danificados antes de reativar.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Tempestade Elétrica Induzida pelo Módulo Zero Ponto</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>O módulo Zero Ponto não coberto causará superaquecimento da atmosfera, e haverá uma tempestade elétrica em {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>
