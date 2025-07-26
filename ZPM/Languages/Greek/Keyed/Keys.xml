@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <BRW.ZPM.DarkEnergyReserve>Καταπολέμηση Μαύρης Ενέργειας</BRW.ZPM.DarkEnergyReserve>
+    <BRW.ZPM.Meltdown>Το ZPM έχει ρωτήσει !</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Απόσυρση Ενέργειας από το ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Καταστροφή στο ZPM: Το μοντέλο υπέφερε καταστροφικό σφάλμα ασφαλείας, καθώς έχασε την προστασία του στον ανεξέργαστο αέρα. Οι ενισχυμένοι κρυστάλλοι naquadah έχουν υποστεί σοβαρή ζημιά από την κβαντική αντίστροφη συμπεριφορά, που απαιτεί επείγουσα επισκευή πριν η συσκευή μπορέσει να αποσυρθεί ενέργεια από το μηδενικό σημείο με ασφαλή τρόπο.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0} εκτείνεται σε ατμοσφαιρική φόρτιση και μπορεί να αποσυρθεί καταστροφικά !</BRW.ZPM.Discharge.Warning>
+    <BRW.ZPM.InducedSolarFlare.Title>Φλάρες Ηλίου που έχουν επηρεαστεί από το ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>Το μοντέλο χάθηκε χωρίς προστασία στον ανεξέργαστο αέρα. Οι κβαντικές συνδεσμοί επικοινωνούν με την μαγνητόσφαιρα του στέρνου, προκαλώντας ένα στρατηγικό μάζα ηλιακού εξαγωγής. Επιπλέον επιπτώσεις: 1. Ανακατασκευή της οροφής ή μετακίνηση του μοντέλου σε ένα πλήρως κλειστό χώρο. 2. Περίμενε την κρίση ({0}). 3. Ανακατασκευή των ζημιωμένων κρυστάλλων πριν απενεργοποιηθεί ξανά το μοντέλο.</BRW.ZPM.Needle>
+    <BRW.ZPM.InducedFlashstorm.Title>Συνθήκες Επιστροφής Ηλίου που έχουν επηρεαστεί από το ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Το μοντέλο ZPM χωρίς προστασία έχει επιταχύνει την ατμόσφαιρα, προκαλώντας θερμικές φλάρες στα επόμενα {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

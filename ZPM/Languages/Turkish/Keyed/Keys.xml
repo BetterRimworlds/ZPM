@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <BRW.ZPM.DarkEnergyReserve>Kara Enerji Rezervi</BRW.ZPM.DarkEnergyReserve>
+    <BRW.ZPM.Meltdown>ZPM Erindi !</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM Enerji Çekimi</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM Sorunu: Modül, açık alanda korumadan yerleştirilmesi nedeniyle kritik güvenlik hatası yaşadı. Modifiye edilmiş naquadah kristalleri, kuantik geri besleme nedeniyle ciddi şekilde hasar gördüğünden, cihazın sıfır noktası enerjisi güvenli şekilde yeniden çekmesi için geniş reperasyonlar gerekir.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0} atmosferik yüklemeye maruz kalmakta ve kritik şekilde boşalabilir !</BRW.ZPM.Discharge.Warning>
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM İndüklenen Güneş Flaresi</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>Modül açık alanda korumadan yerleştirildi. Kuantik iletkenler, yıldız sisteminin manyetosferi ile senkronize oldu ve bu, yapay koronal kütle emisyonunu tetikledi. Azaltma: 1. Tavanı onarıp modülü tamamen kapalı bir alana taşı. 2. Krizi bekle ({0}). 3. Modülü tekrar açmadan önce zararlı kristalleri onarı.</BRW.ZPM.InducedSolarFlare>
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM İndüklenen Işık Şiddeti</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Korumasız ZPM modülü atmosferi ısıttı ve bu, sonraki {0} içinde ışık fırtalarına neden olacak.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>
