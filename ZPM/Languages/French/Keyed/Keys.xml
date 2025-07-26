@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Module ZPM -->
+    <BRW.ZPM.DarkEnergyReserve>Reserve d'Énergie Noire</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- Incident de Décharge du ZPM -->
+    <BRW.ZPM.Meltdown>Un module ZPM s'est fondé !</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Décharge du ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Incident du ZPM
+
+        Le module ZPM a subi une défaillance catastrophique de contenance : le module ZPM a été laissé sans blindage sous le ciel ouvert.
+
+        Les cristaux de contrôle améliorés avec du naquadah du ZPM ont subi des dégâts graves à cause du rétroaction quantique, nécessitant des réparations approfondies avant que le dispositif ne puisse reprendre les opérations d'extraction d'énergie zéro-point de manière sécurisée.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Le {0} subit une exposition atmosphérique et pourrait décharger de manière catastrophique !</BRW.ZPM.Discharge.Warning>
+
+    <!-- Autres messages liés au ZPM -->
+    <BRW.ZPM.InducedSolarFlare.Title>Aurore Solaire Induite par le ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Aurore Solaire Induite par le ZPM
+
+        Le module ZPM a été laissé sans blindage sous le ciel ouvert. Ses conduits de vide quantique se sont synchronisés avec la magnétosphère de l'étoile du système, déclenchant une éjection de masse coronale artificielle.
+
+        Mitigation :
+
+        1. Réparer le toit ou déplacer le module dans une pièce entièrement close.
+        2. Attendre la crise ({0}).
+        3. Réparer les cristaux endommagés avant de réactiver le module.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Auvent Induit par le ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Un module ZPM non couvert a surchauffé l'atmosphère, provoquant des orages électriques pendant les prochains {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

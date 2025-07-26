@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Dark Energy Reserve</BRW.ZPM.DarkEnergyReserve>
+
     <!-- ZPM Discharge Incident -->
     <BRW.ZPM.Meltdown>A ZPM has melted down!</BRW.ZPM.Meltdown>
     <BRW.ZPMDischarge.Title>ZPM Meltdown</BRW.ZPMDischarge.Title>

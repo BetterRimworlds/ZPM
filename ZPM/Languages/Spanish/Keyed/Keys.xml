@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Módulo ZPM -->
+    <BRW.ZPM.DarkEnergyReserve>Reserva de Energía Oscura</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- Incidente de Descarga del ZPM -->
+    <BRW.ZPM.Meltdown>¡Un módulo ZPM se ha derretido!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Derretimiento del ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Descubrimiento del ZPM
+
+        El módulo ZPM ha sufrido una falla catastrófica de contención: el módulo ZPM fue dejado sin blindaje bajo el cielo abierto.
+
+        Los cristales de control mejorados con naquadah del ZPM han sufrido daños graves debido al retroceso cuántico, requiriendo reparaciones extensas antes de que el dispositivo pueda reanudar operaciones de extracción de energía cero-punto de forma segura.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>El {0} está sufriendo exposición atmosférica y podría descargarse de forma catastrófica!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Otros mensajes relacionados con el ZPM -->
+    <BRW.ZPM.InducedSolarFlare.Title>Fase Solar Inducida por ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Fase Solar Inducida por ZPM
+
+        El módulo ZPM fue dejado sin blindaje bajo el cielo abierto. Sus conductos de vacío cuántico se sincronizaron con la magnetosfera de la estrella del sistema, desencadenando una eyectación de masa coronal artificial.
+
+        Mitigación:
+
+        1. Reconstruir el techo o reubicar el módulo en una habitación completamente cerrada con techo.
+        2. Esperar el pico ({0}).
+        3. Reparar los cristales dañados antes de reactivar el módulo.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Tormenta Eléctrica Inducida por ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Un módulo ZPM sin techo ha supercalentado la atmósfera, lo que provocará tormentas eléctricas durante los próximos {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>
