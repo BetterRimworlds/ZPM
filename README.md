@@ -32,9 +32,27 @@ and everyone -- in the vicinity. Fire poppers are mandatory.
 When used in conjunction with the Stargate, you will NOT need to wait to charge the Stargate (~20,000 kW), and in the future,
 it will also allow intergalactic wormhole travel (e.g., across our Internet).
 
+## Dangers of Unroofed ZPMs
+
+An unroofed ZPM will **catastrophically discharge** vast amounts of electricity at random intervals.
+
+The ZPM’s delicate Zero-Point Field quantum matrix depends on a sealed, low‑pressure environment.
+Exposing it to atmospheric gases and charged particles destabilizes the resonance patterns that confine
+the Dark Energy, causing the field to flicker and fail.
+
+The Ancients housed ZPMs deep within shielded vaults to maintain vacuum integrity, block ionizing radiation,
+and prevent air‑borne contaminants from degrading the containment field — ensuring stable, long‑term operation.
+
+### Risks of Open Atmospheric Exposure
+
+* High chance of induced flashstorm incidence.
+* Medium chance of induced intense and long-lasting solar flares.
+* Low chance of catastrophic electrical discharges. 
+
 ---
 
-This mod also adds an Artifacts Orbital Trade Ship, which specializes in Archotech of all kinds, including previously non-buyable
+This mod also adds an Artifacts Orbital Trade Ship, which specializes in Archotech of all kinds, including previously 
+non-buyable
 artifacts, such as the Venometric Battery (which also sucks 1,000 w from the Zero-Point Field).
 
 ---
