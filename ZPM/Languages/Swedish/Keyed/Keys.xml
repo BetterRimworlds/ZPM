@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM-modul -->
+    <BRW.ZPM.DarkEnergyReserve>Nullpunktenergital</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM-avlastningsfel -->
+    <BRW.ZPM.Meltdown>ZPM-modulen har smälta!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM-modulens avlastning</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter> ZPM-modulens isolationsfel
+
+        ZPM-modulens kvantumvakuum-avlastningssektor har uppstått ett katastrofalt isolationsfel: ZPM-modulen var utsatt för atmosfären.
+
+        ZPM-modulens natrium-veckststyrd kristall var allvarligt skadad på grund av kvantumresonans, så det måste göras en stor mängd reparationer för att säkerställa nullpunktenergiens avlastning.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Apparaten {0} är utsatt för atmosfären, kan leda till katastrofala elektriska iskast!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Övriga information om ZPM-modulen -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM-modulens inducerade solstorm</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM-modulens inducerade solstorm
+
+        ZPM-modulen var utsatt för atmosfären. Kvantumvakuum-avlastningsrör som är synkroniserad med systemets stjärnas magnetosfär, vilket leder till teoretiskt solstorm.
+
+        Mindre skadlig handling:
+
+        1. Återställ skygge och flytta modulen till ett stängt rum.
+        2. Vänta på att solstormen går ({0}).
+        3. Reparera skadade kristaller innan omstart.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM-modulens inducerade lynnedbrytning</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>ZPM-modulen utsatt för atmosfären leder till atmosfärns uppvärmning och lynnedbrytning i {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

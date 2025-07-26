@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Donkere Energie Reservoir</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>Een ZPM is gesmolten !</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Ontlading van ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Incident ZPM
+
+        Het ZPM-module is geslaagd in een catastrofale beveiligingsfout: het ZPM-module is zonder bescherming onder de open lucht gelaten.
+
+        De verbeterde naquadah-cristallen van het ZPM zijn ernstig beschadigd door het quantum terugkoppeling, wat herstelwerk vereist voordat het apparaat de zero-point energie-onttrekking weer kan opnemen in een veilige manier.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Het {0} wordt blootgesteld aan atmosferische blootstelling en kan catastrofisch ontladen !</BRW.ZPM.Discharge.Warning>
+
+    <!-- Andere berichten over ZPM -->
+    <BRW.ZPM.InducedSolarFlare.Title>Zonnestraal Gecreëerd door ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Zonnestraal Gecreëerd door ZPM
+
+        Het ZPM-module is zonder bescherming onder de open lucht gelaten. Zijn kwantumvacuümleidingen zijn in synchronisatie gekomen met de magnetosfeer van het sterrenstelsel, wat een artificiële coronale massa-uitstoot veroorzaakt.
+
+        Mitigatie :
+
+        1. Herstel het dak of verplaats het module naar een volledig gesloten ruimte.
+        2. Wacht op de crisis ({0}).
+        3. Herstel de beschadigde kristallen voor het heractiveren van het module.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Elektrische Storm Gecreëerd door ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Een niet-bedekte Z

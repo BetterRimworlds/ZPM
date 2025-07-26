@@ -32,9 +32,27 @@ and everyone -- in the vicinity. Fire poppers are mandatory.
 When used in conjunction with the Stargate, you will NOT need to wait to charge the Stargate (~20,000 kW), and in the future,
 it will also allow intergalactic wormhole travel (e.g., across our Internet).
 
+## Dangers of Unroofed ZPMs
+
+An unroofed ZPM will **catastrophically discharge** vast amounts of electricity at random intervals.
+
+The ZPM’s delicate Zero-Point Field quantum matrix depends on a sealed, low‑pressure environment.
+Exposing it to atmospheric gases and charged particles destabilizes the resonance patterns that confine
+the Dark Energy, causing the field to flicker and fail.
+
+The Ancients housed ZPMs deep within shielded vaults to maintain vacuum integrity, block ionizing radiation,
+and prevent air‑borne contaminants from degrading the containment field — ensuring stable, long‑term operation.
+
+### Risks of Open Atmospheric Exposure
+
+* High chance of induced flashstorm incidence.
+* Medium chance of induced intense and long-lasting solar flares.
+* Low chance of catastrophic electrical discharges. 
+
 ---
 
-This mod also adds an Artifacts Orbital Trade Ship, which specializes in Archotech of all kinds, including previously non-buyable
+This mod also adds an Artifacts Orbital Trade Ship, which specializes in Archotech of all kinds, including previously 
+non-buyable
 artifacts, such as the Venometric Battery (which also sucks 1,000 w from the Zero-Point Field).
 
 ---
@@ -56,6 +74,24 @@ The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wi
 3. [**Savegame Shrinker**]() — Cleans up unnecessary data from long-running Savegames.
 
 ## Change Log
+
+v2.0.0:
+* **[2025-07-26 05:12:29 CDT]** Added a field manual notice of the dangers of unroofed ZPMs. HEAD -> v2.x
+* **[2025-07-26 04:39:40 CDT]** An unroofed ZPM will now induce flashstorms.
+* **[2025-07-25 07:46:34 CDT]** An unroofed ZPM will now induce intense solar flares.
+* **[2025-07-25 07:08:35 CDT]** An unroofed ZPM now will **catastrophically discharge** vast amounts of electricity at random intervals.
+* **[2025-07-24 19:26:16 CDT]** Moved all of the dark energy code to Comp_ZPMBattery.
+* **[2025-07-24 13:17:39 CDT]** Removed some XML interferring with other mods.
+* **[2025-07-23 06:15:32 CDT]** Ported to C# v10.
+* **[2025-07-26 07:09:24 CDT]** Added translations for Dutch, French, German, Italian, Spanish, and Spanish (Latin America).
+* **[2025-07-26 07:16:20 CDT]** Added translations for Danish, Polish, Greek, Romanian, and Turkish.
+* **[2025-07-26 07:23:14 CDT]** Added translations for Ukrainian and Russian.
+* **[2025-07-26 07:29:00 CDT]** Added translations for Chinese (Simplified), Chinese (Traditional), Korean, Japanese, and Vietnamese.
+* **[2025-07-26 07:35:45 CDT]** Added translations for Czech, Slovak, Estonian, and Hungarian.
+* **[2025-07-26 07:38:05 CDT]** Added translations for Finnish, Norwegian, and Swedish
+
+v1.4.1:
+* **[2025-07-07 20:35:24 CDT]** Improved the building efficiency. origin/v1.x, v1.x
 
 v1.4.0:
 * **[2025-07-07 18:05:20 CDT]** Added support for Rimworld v1.6.

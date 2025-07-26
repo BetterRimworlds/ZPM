@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM 모듈 -->
+    <BRW.ZPM.DarkEnergyReserve>제로포인트 에너지 저장소</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM 방전 사고 -->
+    <BRW.ZPM.Meltdown>제로포인트 모듈이 녹아내렸습니다!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>제로포인트 모듈 녹아내림</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>제로포인트 모듈 격리 실패
+
+        제로포인트 모듈의 양자 진공 추출실에서 카타스트로픽 격리 실패가 발생했습니다: 제로포인트 모듈은 오픈 스카이 아래에 방치되었습니다.
+
+        제로포인트 모듈의 나쿠아다 향상 제어 결정체는 양자 반응으로 인해 심각하게 손상되었으며, 장비가 안전하게 제로포인트 에너지 추출 작업을 재개하기 전에 광범위한 수리가 필요합니다.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0}은 대기 노출을 겪고 있으며, 카타스트로픽 방전을 일으킬 수 있습니다!</BRW.ZPM.Discharge.Warning>
+
+    <!-- ZPM 관련 기타 메시지 -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>제로포인트 모듈로 인한 태양 플레어</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        제로포인트 모듈로 인한 태양 플레어
+
+        제로포인트 모듈은 오픈 스카이 아래에 방치되었습니다. 양자 진공 도관이 시스템 별의 자석층과 동기화되어 인공 코로나 물질 방출을 유발했습니다.
+
+        완화 조치:
+
+        1. 다시 덮거나 모듈을 완전히 밀폐된 방으로 이동하세요.
+        2. 플레어가 사라질 때까지 기다리세요 ({0}).
+        3. 손상된 결정체를 수리한 후 다시 활성화하세요.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>제로포인트 모듈로 인한 번개 폭풍</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>{0}을(를) 덮지 않은 제로포인트 모듈은 대기를 과열시켰으며, 이후 번개 폭풍이 발생할 것입니다.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

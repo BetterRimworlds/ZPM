@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Módulo ZPM -->
+    <BRW.ZPM.DarkEnergyReserve>Nullpontos energia tartalék</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- Acidente de Descarga ZPM -->
+    <BRW.ZPM.Meltdown>ZPM modul megolvadott!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM modul megolvadása</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter> ZPM modul izolációs hibája
+
+        A ZPM modul kvantumvakuum-extrakciós szektorának izolációs hibája történt: a ZPM modul kiszolgáltatott és kitéve a levegőnek.
+
+        A ZPM modul natrium növelési vezérlési kristálya súlyosan károsodott kvantumrezonancia miatt, szükséges nagy mennyiségű javítás a nullpontos energia extrakciójának biztonságos visszakapcsolásához.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Az eszköz {0} levegőre van kitéve, katasztrófális villámcsapásra vezethet!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Outras informações relacionadas ao ZPM -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM modullal okozott napfoltok</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM modullal okozott napfoltok
+
+        A ZPM modul kiszolgáltatott és kitéve a levegőnek. A kvantumvakuumát átvihető csöve a rendszer csillagának magnetoszférájával van szinkronban, ami napanyagok umelis kibocsátását okozza.
+
+        Kisebb intézkedések:
+
+        1. Állítsa vissza a fedettséget, és helyezze a modult bezárt helyiségbe.
+        2. Várjon, amíg elszáll a napfolt ({0}).
+        3. Javítsa a károsodott kristályokat a újraindítás előtt.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM modullal okozott villámcsapás</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>A ZPM modul fedettsége nélkül a légkör melegszik, és villámcsapás lesz {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

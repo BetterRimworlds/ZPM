@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM モジュール -->
+    <BRW.ZPM.DarkEnergyReserve>ゼロポイントエネルギー貯蔵庫</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM 放電事故 -->
+    <BRW.ZPM.Meltdown>ゼロポイントモジュールが溶けました！</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ゼロポイントモジュール溶融</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ゼロポイントモジュールの隔離失敗
+
+        ゼロポイントモジュールの量子真空抽出室で大規模な隔離失敗が発生しました：ゼロポイントモジュールは屋外に放置されました。
+
+        ゼロポイントモジュールのナクアダ強化制御結晶は量子反応により深刻に損傷しており、モジュールがゼロポイントエネルギー抽出作業を安全に再開するには広範な修理が必要です。</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0}は大気曝露を経験しており、大規模な放電を引き起こす可能性があります！</BRW.ZPM.Discharge.Warning>
+
+    <!-- ZPM 関連のその他のメッセージ -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ゼロポイントモジュールによる太陽フレア</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ゼロポイントモジュールによる太陽フレア
+
+        ゼロポイントモジュールは屋外に放置されました。量子真空導管がシステム恒星の磁層と同期しており、人工コロナ物質放出を引き起こしました。
+
+        緩和策：
+
+        1. 再び覆ったり、モジュールを完全に閉じた部屋に移動してください。
+        2. フレアが消えるまで待機してください ({0}).
+        3. 傷んだ結晶を修理した後、再起動してください。
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ゼロポイントモジュールによる雷暴</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>覆われていないゼロポイントモジュールは大気を過熱させ、その後{0}で雷暴が発生します。</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

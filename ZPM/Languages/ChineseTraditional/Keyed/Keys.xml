@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM 模塊 -->
+    <BRW.ZPM.DarkEnergyReserve>零點能量儲備</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM 放電事故 -->
+    <BRW.ZPM.Meltdown>零點模組熔毀了！</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>零點模組熔毀</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>零點模組隔離失效
+
+        零點模組的量子真空提取室發生災難性隔離失效：零點模組被遺留在露天環境中。
+
+        零點模組的鈉基增強控制晶體因量子回波嚴重損壞，需進行大量修復工作後才能安全恢復零點能量提取操作。</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>第 {0} 個裝置正在經歷大氣暴露，可能引發災難性放電！</BRW.ZPM.Discharge.Warning>
+
+    <!-- 其他與 ZPM 相關的訊息 -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>零點模組引發的太陽耀斑</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        零點模組引發的太陽耀斑
+
+        零點模組被遺留在露天環境中。其量子真空導管與系統恆星的磁層同步，引發人工日冕物質拋射。
+
+        緩解措施：
+
+        1. 重新遮蓋或將模組移至完全封閉的房間。
+        2. 等待耀斑消退 ({0} )。
+        3. 修復損壞的晶體後再重新激活。
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>零點模組引發的閃電風暴</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>未遮蓋的零點模組導致大氣超熱，接下來 {0} 將出現閃電風暴。</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

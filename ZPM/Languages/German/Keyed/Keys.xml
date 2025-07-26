@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM-Modul -->
+    <BRW.ZPM.DarkEnergyReserve>Reservoir Dunkle Energie</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM-Entladungsunfall -->
+    <BRW.ZPM.Meltdown>Ein ZPM ist geschmolzen !</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Entladung des ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Unfall mit dem ZPM
+
+        Das ZPM-Modul hat eine katastrophale Sicherheitsfehler erlitten: Das ZPM-Modul wurde ohne Schutz unter freiem Himmel gelassen.
+
+        Die verbesserten naquadah-behinderten Kristalle des ZPM sind durch quantenbedingte Rückkopplung schwer beschädigt worden, was umfangreiche Reparaturen erfordert, bevor das Gerät die zero-point Energie-Entziehung wieder sicher aufnehmen kann.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Das {0} wird atmosphärisch belastet und könnte katastrophal entladen !</BRW.ZPM.Discharge.Warning>
+
+    <!-- Andere Nachrichten zu ZPM -->
+    <BRW.ZPM.InducedSolarFlare.Title>Solarflares durch ZPM induziert</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Solarflares durch ZPM induziert
+
+        Das ZPM-Modul wurde ohne Schutz unter freiem Himmel gelassen. Seine quantenleitenden Leitungen haben sich mit der Magnetosphäre des Sternsynchronisiert, was eine künstliche koronalen Massenausstoß ausgelöst hat.
+
+        Minderung :
+
+        1. Reparieren Sie das Dach oder verschieben Sie das Modul in ein vollständig geschlossenes Raum.
+        2. Warten Sie auf die Krise ({0}).
+        3. Reparieren Sie die beschädigten Kristalle, bevor Sie das Modul wieder aktivieren.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Blitzsturm durch ZPM induziert</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Ein nicht abgedecktes ZPM-Modul hat die Atmosphäre überheizt, was Blitzstürme in den nächsten {0} verursachen wird.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

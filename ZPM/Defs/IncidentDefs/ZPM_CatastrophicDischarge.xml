@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>BRW_ZPMDischarge</defName>
+        <label>ZPM catastrophic discharge</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>BetterRimworlds.ZPM.IncidentWorker_ZPMDischarge</workerClass>
+        <baseChance>0</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <earliestDay>0</earliestDay>
+        <letterDef>ThreatBig</letterDef>
+    </IncidentDef>
+</Defs>
