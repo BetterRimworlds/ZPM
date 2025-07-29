@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <!-- Módulo ZPM -->
-    <BRW.ZPM.DarkEnergyReserve>Reserva energie nulového bodu</BRW.ZPM.DarkEnergyReserve>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Rezervní tmavá energie</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- Acidente de Descarga ZPM -->
-    <BRW.ZPM.Meltdown>ZPM modul se roztavil!</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>Deretění ZPM modulu</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter> Porucha izolace ZPM modulu
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>ZPM se roztopil!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Roztavení ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Průraz ochrany ZPM
 
-        O oddíl pro extrakci kvantového vakua ZPM modulu utrpěl katastrofální poruchu izolace: ZPM modul byl nechráněn a vystaven vzduchu.
+Kvantová vakuumová vývrtka modulu nulového bodu trpěla katastrofickým selháním ochrany: Modul nulového bodu byl zanechán bez ochrany pod otevřeným nebem.
 
-        Natriumový kontrolní krystal v ZPM modulu byl závažně poškozen kvantovou rezonancí, bude třeba provést velké množství oprav pro bezpečné obnovení provozu extrakce nulové energie.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>Zařízení {0} je vystaveno atmosféře, může způsobit katastrofální výboj!</BRW.ZPM.Discharge.Warning>
+Krystaly řídicího zařízení ZPM doplněné o naquadah byly značně poškozeny kvantovým odrazem, než bude zařízení moci bezpečně pokračovat ve výběru energie z nulového bodu, jsou potřeba důkladné opravy.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning> {0} trpí vystavením atmosféře a může katastroficky vybít!</BRW.ZPM.Discharge.Warning>
 
-    <!-- Outras informações relacionadas ao ZPM -->
+    <!-- Other ZPM related messages -->
 
-    <BRW.ZPM.InducedSolarFlare.Title>Sluneční výbuchy způsobené ZPM modulem</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare.Title>Sluneční výron způsobený ZPM</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        Sluneční výbuchy způsobené ZPM modulem
+        Sluneční výron způsobený ZPM
 
-        ZPM modul byl nechráněn a vystaven vzduchu. Jeho trubka pro přenos kvantového vakua je synchronizována s magnetosférou hvězdy systému, což způsobuje umělou emisí sluneční hmoty.
+        Modul nulového bodu byl neochranně umístěn pod otevřeným nebem. Jeho kvantově-vakuumové vedení bylo fázově spojeno s magnétosférou hvězdy systému, čímž byl vyvolán umělý koronální výbuch hmoty.
 
-        Mírné opatření:
+        Zmírnění:
 
-        1. Přidejte pokrytí nebo přesuňte modul do uzavřené místnosti.
-        2. Počkejte, než přejde sluneční výbuch ({0}).
-        3. Opravte poškozené krystaly před restartováním.
+        1. Přestavěj střechu nebo přesuň modul do úplně uzavřené místnosti.
+        2. Počkej na výron ({0}).
+        3. Oprav poškozené krystaly před restartem.
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>Elektrická bouře způsobená ZPM modulem</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>ZPM modul bez pokrytí způsobí přetopení atmosféry a vznikne elektrická bouře ve {0}.</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>Bleskobouře způsobená ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Nepodkrytý ZPM přehřál atmosféru, což způsobilo bleskové bouře po dobu {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

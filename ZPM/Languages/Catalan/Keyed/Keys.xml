@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Reserva d'energia oscura</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>Un ZPM s'ha fonut!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Foniment del ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Fallada de contenció del ZPM
+
+La cambra d'extracció del buit quàntic del mòdul de punt zero ha patit una fallada de contenció catastròfica: el mòdul de punt zero s'ha deixat sense protecció sota cel obert.
+
+Els cristalls de control el·laborats amb naquadah del ZPM han estat severament danysats pel rebote quàntic, cosa que requereix reparacions extensives abans que l'apparell pugui reprendre segurament les operacions d'extracció d'energia del punt zero.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>L'{0} està patint exposició atmosfèrica i pot descarregar-se de forma catastròfica!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Other ZPM related messages -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>Flare solar induït per ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Flare solar induït per ZPM
+
+        El mòdul de punt zero s'ha deixat sense protecció sota cel obert. Els conductes del buit quàntic del ZPM
+        s'han posat en fase amb la magnetosfera de l'estrella del sistema, provocant una
+        ejecció artificial de massa coronal.
+
+        Mitigació:
+
+        1. Tancar o traslladar el mòdul cap a una cambra tancada i amb sostre.
+        2. Esperar que passi el flare ({0}).
+        3. Reparar els cristalls danysats abans de reactivar el sistema.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Tempestes de flash induïdes per ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Un ZPM sense sostre ha superescalfat l'atmosfera causant tempestes de flash per als propers {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

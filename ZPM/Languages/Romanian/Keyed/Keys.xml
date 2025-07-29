@@ -1,12 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <BRW.ZPM.DarkEnergyReserve>Rezervor de energie neagră</BRW.ZPM.DarkEnergyReserve>
-    <BRW.ZPM.Meltdown>ZPM s-a topit !</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>Descărcare energie ZPM</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>Problema cu ZPM: Modulul a suferit o defecțiune catastrofică de securitate, deoarece a fost plasat fără protecție în spațiul deschis. Cristalele naquadah modificate au fost grav afectate de feedbackul cuantic, ceea ce necesită reparații extinse înainte ca dispozitivul să poată redescărca energie zero punct într-un mod sigur.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>{0} este supus sarcinii atmosferice și poate descărca catastrofic !</BRW.ZPM.Discharge.Warning>
-    <BRW.ZPM.InducedSolarFlare.Title>Flare solare induse de ZPM</BRW.ZPM.InducedSolarFlare.Title>
-    <BRW.ZPM.InducedSolarFlare>Modulul a fost plasat fără protecție în spațiul deschis. Conductele cuantice au sincronizat cu magnetosfera sistemului stelar, ceea ce a provocat o emisie de masă coronală artificială. Măsuri de reducere: 1. Reparați acoperișul sau mutați modulul într-un spațiu complet închis. 2. Așteptați criza ({0}). 3. Reparați cristalele deteriorate înainte de a reporni modulul.</BRW.ZPM.InducedSolarFlare>
-    <BRW.ZPM.InducedFlashstorm.Title>Bură de lumină indusă de ZPM</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>Modulul ZPM fără protecție a încălzit atmosfera, ceea ce va provoca buri de lumină în următoarele {0}.</BRW.ZPM.InducedFlashstorm>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Rezervă de Energie Întunecată</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>Un ZPM a suferit o fusie!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Fusie ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Fracas de Încuiere ZPM
+
+Camera de extracție a vidului cuantic a modulului Zero Point (ZPM) a suferit un fracas de încuiere fatal: Modulul Zero-Point a fost lăsat neînvelit sub cerul deschis.
+
+Cristalele de control îmbunătățite cu naquadah ale ZPM-ului au fost grav deteriorate de reacția inversă cuantică, necesitând reparații extinse înainte ca dispozitivul să poată relua în mod sigur operațiunile de extracție a energiei de punct zero.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0} suferă de expunere atmosferică și poate suferi o descărcare catastrofală!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Other ZPM related messages -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>Flare Solar Pricinuit de ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Flare Solar Pricinuit de ZPM
+
+        Modulul Zero-Point a fost lăsat neînvelit sub cerul deschis. Conductele sale de vid cuantic au fost sincronizate în fază cu magnetosfera stelei sistemului, declanșând o erupție de masă coronală artificială.
+
+        Măsuri de atenuare:
+
+        1. Reacoperi sau muta modulul într-o cameră complet închisă, cu acoperiș.
+        2. Așteptați ca flare-ul ({0}).
+        3. Reparăți cristalele deteriorate înainte de reactivare.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Flashstorm Pricinuit de ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Un ZPM lipsit de acoperiș a supraîncălzit atmosfera, duce la furtuni electrice pentru următorii {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

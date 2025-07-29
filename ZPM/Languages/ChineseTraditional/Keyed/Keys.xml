@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <!-- ZPM 模塊 -->
-    <BRW.ZPM.DarkEnergyReserve>零點能量儲備</BRW.ZPM.DarkEnergyReserve>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>暗能量储备</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- ZPM 放電事故 -->
-    <BRW.ZPM.Meltdown>零點模組熔毀了！</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>零點模組熔毀</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>零點模組隔離失效
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>ZPM 已熔毁！</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM 熔毁</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM 容器破裂
 
-        零點模組的量子真空提取室發生災難性隔離失效：零點模組被遺留在露天環境中。
+零点模塊的量子真空提取室發生了災難性的容器失效：零點模塊在露天環境下未受到屏蔽保護。
 
-        零點模組的鈉基增強控制晶體因量子回波嚴重損壞，需進行大量修復工作後才能安全恢復零點能量提取操作。</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>第 {0} 個裝置正在經歷大氣暴露，可能引發災難性放電！</BRW.ZPM.Discharge.Warning>
+ZPM 的钠夸德增強控制晶體因量子反饋嚴重損壞，需進行廣泛修復後，設備才能安全恢復零點能源提取作業。</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>The {0} 正遭受大氣暴露，可能引發災難性放電！</BRW.ZPM.Discharge.Warning>
 
-    <!-- 其他與 ZPM 相關的訊息 -->
+    <!-- Other ZPM related messages -->
 
-    <BRW.ZPM.InducedSolarFlare.Title>零點模組引發的太陽耀斑</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM誘發的太陽風暴</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        零點模組引發的太陽耀斑
+        ZPM誘發的太陽風暴
 
-        零點模組被遺留在露天環境中。其量子真空導管與系統恆星的磁層同步，引發人工日冕物質拋射。
+        零點模塊在露天環境下未受到屏蔽保護。其量子真空導管與系統恆星的磁層產生相位鎖定，引發了人工日冕物質拋射。
 
-        緩解措施：
+        缓解措施：
 
-        1. 重新遮蓋或將模組移至完全封閉的房間。
-        2. 等待耀斑消退 ({0} )。
-        3. 修復損壞的晶體後再重新激活。
+        1. 重新蓋 roof 或將模塊遷移到完全封閉的 roof 房間。
+        2. 等待風暴結束 ({0})。
+        3. 修復受損的晶體後再啟動。
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>零點模組引發的閃電風暴</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>未遮蓋的零點模組導致大氣超熱，接下來 {0} 將出現閃電風暴。</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM誘發的閃電暴風</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>未遮蓋的 ZPM 已使大氣過熱，導致接下來 {0} 的閃電暴風。</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

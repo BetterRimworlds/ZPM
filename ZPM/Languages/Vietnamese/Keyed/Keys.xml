@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <!-- Mô-đun ZPM -->
-    <BRW.ZPM.DarkEnergyReserve>Kho dự trữ năng lượng điểm không</BRW.ZPM.DarkEnergyReserve>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Dự trữ Năng lượng Tối</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- Sự cố phóng điện ZPM -->
-    <BRW.ZPM.Meltdown>Mô-đun điểm không đã nóng chảy!</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>Nóng chảy mô-đun điểm không</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>Thất bại cách ly mô-đun điểm không
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>Một ZPM đã bị chảy rữa!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Sự cố Chảy rữa ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Sự cố Rò rỉ Chứa ZPM
 
-        Phòng chứa trích xuất chân không lượng tử của mô-đun điểm không đã gặp sự cố cách ly thảm khốc: mô-đun điểm không được để ngoài trời.
+Buồng trích xuất chân không lượng tử của Module Điểm Không (Zero Point Module) đã gặp sự cố rò rỉ chứa thảm khốc: Module Điểm Không bị để lộ ngoài trời mà không có lớp chắn bảo vệ.
 
-        Các tinh thể điều khiển được tăng cường bằng natri trong mô-đun điểm không bị hư hại nghiêm trọng do phản ứng lượng tử, cần sửa chữa rộng rãi trước khi có thể khôi phục hoạt động trích xuất năng lượng điểm không một cách an toàn.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>Thiết bị số {0} đang trải qua sự phơi bày trong khí quyển, có thể gây ra phóng điện thảm khốc!</BRW.ZPM.Discharge.Warning>
+Các tinh thể điều khiển được tăng cường bằng naquadah của ZPM đã bị hư hỏng nghiêm trọng do phản hồi lượng tử, cần sửa chữa kỹ lưỡng trước khi thiết bị có thể an toàn tiếp tục hoạt động trích xuất năng lượng điểm không.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Thiết bị {0} đang chịu ảnh hưởng của môi trường khí quyển và có thể phát tán năng lượng một cách thảm khốc!</BRW.ZPM.Discharge.Warning>
 
-    <!-- Các thông tin liên quan khác đến ZPM -->
+    <!-- Other ZPM related messages -->
 
-    <BRW.ZPM.InducedSolarFlare.Title>Bão mặt trời do mô-đun điểm không gây ra</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare.Title>Ngọn lửa mặt trời do ZPM gây ra</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        Bão mặt trời do mô-đun điểm không gây ra
+        Ngọn lửa mặt trời do ZPM gây ra
 
-        Mô-đun điểm không bị để ngoài trời. Các ống dẫn chân không lượng tử của nó đồng bộ với từ quyển của ngôi sao hệ thống, gây ra hiện tượng phóng thích vật chất mặt trời nhân tạo.
+        Module Điểm Không bị để lộ ngoài trời. Các ống dẫn chân không lượng tử
+        bị khóa pha với từ quyển của ngôi sao hệ thống, kích hoạt một
+        sự phun trào khối khí nhân tạo.
 
-        Biện pháp giảm thiểu:
+        Cách xử lý:
 
-        1. Lắp lại lớp che hoặc di chuyển mô-đun đến phòng kín hoàn toàn.
-        2. Chờ bão mặt trời qua đi ({0}).
-        3. Sửa chữa các tinh thể bị hỏng trước khi tái kích hoạt.
+        1. Làm mái che hoặc di dời module đến một căn phòng kín đáo, có mái che hoàn toàn.
+        2. Đợi cho ngọn lửa qua đi ({0}).
+        3. Sửa chữa các tinh thể bị hư hỏng trước khi kích hoạt lại.
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>Bão sét do mô-đun điểm không gây ra</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>Mô-đun điểm không không được che sẽ gây ra hiện tượng quá nhiệt khí quyển, và sẽ có bão sét trong {0}.</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>Cơn bão điện quang do ZPM gây ra</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Một ZPM không có mái che đã làm siêu nóng bầu khí quyển dẫn đến cơn bão điện quang trong {0} tới.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

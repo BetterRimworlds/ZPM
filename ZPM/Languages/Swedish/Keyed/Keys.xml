@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <!-- ZPM-modul -->
-    <BRW.ZPM.DarkEnergyReserve>Nullpunktenergital</BRW.ZPM.DarkEnergyReserve>
+    <!-- ZPM Modul -->
+    <BRW.ZPM.DarkEnergyReserve>Mörk energi-reserv</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- ZPM-avlastningsfel -->
-    <BRW.ZPM.Meltdown>ZPM-modulen har smälta!</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>ZPM-modulens avlastning</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter> ZPM-modulens isolationsfel
+    <!-- ZPM-utsläppshändelse -->
+    <BRW.ZPM.Meltdown>En ZPM har smält ned!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM-smältning</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM-läckage
 
-        ZPM-modulens kvantumvakuum-avlastningssektor har uppstått ett katastrofalt isolationsfel: ZPM-modulen var utsatt för atmosfären.
+Kvantsvartmoduls kvantvakuumsextraktionskammare har upplevt en kritisk läckage: Kvantsvartmodulen lämnades oskyddad under öppen himmel.
 
-        ZPM-modulens natrium-veckststyrd kristall var allvarligt skadad på grund av kvantumresonans, så det måste göras en stor mängd reparationer för att säkerställa nullpunktenergiens avlastning.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>Apparaten {0} är utsatt för atmosfären, kan leda till katastrofala elektriska iskast!</BRW.ZPM.Discharge.Warning>
+Modulens naquadah-förstärkta styrelskristaller har allvarligt skadats av kvantbågen och kräver omfattande reparationer före återupptagande av kvantsvartenergiextraktionsoperationer.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Den {0} utsätts för atmosfärsexponering och kan kraftigt urladdas!</BRW.ZPM.Discharge.Warning>
 
-    <!-- Övriga information om ZPM-modulen -->
+    <!-- andra ZPM-relaterade meddelanden -->
 
-    <BRW.ZPM.InducedSolarFlare.Title>ZPM-modulens inducerade solstorm</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM-inducerad solfläck</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        ZPM-modulens inducerade solstorm
+        ZPM-inducerad solfläck
 
-        ZPM-modulen var utsatt för atmosfären. Kvantumvakuum-avlastningsrör som är synkroniserad med systemets stjärnas magnetosfär, vilket leder till teoretiskt solstorm.
+        Kvantsvartmodulen lämnades oskyddad under öppen himmel. Dens kvantvakuum-
+        ledningar faser-anklade med systemets stjärnas magnetosfär, vilket utlöste en
+        artificiell koronalmassutkastning.
 
-        Mindre skadlig handling:
+        Minskning:
 
-        1. Återställ skygge och flytta modulen till ett stängt rum.
-        2. Vänta på att solstormen går ({0}).
-        3. Reparera skadade kristaller innan omstart.
+        1. Bygg tak till eller flytta modulen till en fullt innesluten, takad rum.
+        2. Vänta tills solfläcken försvinner ({0}).
+        3. Reparera skadade kristaller före återupprepning.
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>ZPM-modulens inducerade lynnedbrytning</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>ZPM-modulen utsatt för atmosfären leder till atmosfärns uppvärmning och lynnedbrytning i {0}.</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM-inducerad blixtstorm</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>En oavkappad ZPM har superhettat atmosfären och leder till blixtstormar i {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <!-- Modulo ZPM -->
-    <BRW.ZPM.DarkEnergyReserve>Reserva di Energia Oscura</BRW.ZPM.DarkEnergyReserve>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Riserva di Energia Oscura</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- Incidente di Scarica del ZPM -->
-    <BRW.ZPM.Meltdown>Un modulo ZPM si è sciolto !</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>Scarica del ZPM</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>Incidente del ZPM
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>Il ZPM ha avuto un meltdown!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Meltdown del ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Fuga di Contenimento
 
-        Il modulo ZPM ha subito una falla catastrofica di contenimento: il modulo ZPM è stato lasciato senza protezione al cielo aperto.
+La camera di estrazione del vuoto quantistico del modulo Zero Point ha subito un grave fallimento di contenimento: il modulo Zero-Point è rimasto privo di schermatura sotto il cielo aperto.
 
-        I cristalli di controllo migliorati con naquadah del ZPM hanno subito danni gravi a causa del feedback quantistico, richiedendo riparazioni estese prima che il dispositivo possa riprendere le operazioni di estrazione di energia zero-punto in modo sicuro.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>Il {0} sta subendo un'esposizione atmosferica e potrebbe scaricarsi in modo catastrofico !</BRW.ZPM.Discharge.Warning>
+I cristalli di controllo rafforzati con naquadah del ZPM sono stati gravemente danneggiati dalla reazione quantistica, richiedendo riparazioni estensive prima che il dispositivo possa riprendere in modo sicuro le operazioni di estrazione dell'energia del punto zero.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>L'{0} sta subendo esposizione atmosferica e potrebbe scaricarsi in modo catastrofico!</BRW.ZPM.Discharge.Warning>
 
-    <!-- Altri messaggi legati al ZPM -->
-    <BRW.ZPM.InducedSolarFlare.Title>Aurora Solare Indotta dal ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <!-- Other ZPM related messages -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>Flash Solare Indotto da ZPM</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        Aurora Solare Indotta dal ZPM
+        Flash Solare Indotto da ZPM
 
-        Il modulo ZPM è stato lasciato senza protezione al cielo aperto. I suoi condotti di vuoto quantico si sono sincronizzati con la magnetosfera dell'astro del sistema, scatenando un'espulsione di massa coronale artificiale.
+        Il modulo Zero-Point è rimasto privo di schermatura sotto il cielo aperto. Le sue condotte del vuoto quantistico
+        hanno bloccato la fase con la magnetosfera della stella del sistema, scatenando un
+        eiaculazione coronale artificiale.
 
-        Mitigazione :
+        Mitigazione:
 
-        1. Riconstruire il tetto o spostare il modulo in una stanza completamente chiusa.
-        2. Aspettare la crisi ({0}).
-        3. Riparare i cristalli danneggiati prima di riattivare il modulo.
+        1. Riparare il tetto o spostare il modulo in una stanza completamente chiusa e coperta.
+        2. Attendere il flash ({0}).
+        3. Riparare i cristalli danneggiati prima del riavvio.
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>Tempesta Elettrica Indotta dal ZPM</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>Un modulo ZPM non coperto ha surriscaldato l'atmosfera, provocando tempeste elettriche per i prossimi {0}.</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>Tempesta Elettrica Indotta da ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Un ZPM senza tetto ha surriscaldato l'atmosfera causando tempeste elettriche per i prossimi {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

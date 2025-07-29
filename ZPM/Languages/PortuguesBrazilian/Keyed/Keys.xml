@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Módulo ZPM -->
+    <BRW.ZPM.DarkEnergyReserve>Reserva de Energia Escura</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- Incidente de Descarga ZPM -->
+    <BRW.ZPM.Meltdown>Uma ZPM fundiu-se!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Enxurrada da ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Vazamento de Contenção da ZPM
+
+A câmara de extração de vácuo quântico do Módulo de Ponto Zero foi vítima de uma falha catastrófica de contenção: O Módulo de Ponto Zero ficou exposto sem blindagem sob o céu aberto.
+
+Os cristais de controle reforçados com naquadah da ZPM foram severamente danificados pelo retrocesso quântico, exigindo reparos extensos antes que o dispositivo possa retomar em segurança as operações de extração de energia de ponto zero.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>O {0} está sofrendo com exposição atmosférica e pode descarregar-se de forma catastrófica!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Outras mensagens relacionadas à ZPM -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>Flare Solar Induzido pela ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Flare Solar Induzido pela ZPM
+
+        O Módulo de Ponto Zero foi deixado sem blindagem sob o céu aberto. Seus condutos de vácuo quântico
+        travaram fase com a magnetosfera da estrela do sistema, acionando uma
+        ejeção de massa coronal artificial.
+
+        Mitigação:
+
+        1. Re-coberir ou mover o módulo para um ambiente totalmente fechado e com teto.
+        2. Aguardar o flare ({0}).
+        3. Reparar os cristais danificados antes da reativação.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Tempestade Elétrica Induzida pela ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Uma ZPM sem teto superaqueceu a atmosfera, causando tempestades elétricas por {0}.</BRW.ZPM.InducedFlashstorm>
+</LanguageData>

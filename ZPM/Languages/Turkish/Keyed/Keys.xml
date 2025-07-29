@@ -1,12 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <BRW.ZPM.DarkEnergyReserve>Kara Enerji Rezervi</BRW.ZPM.DarkEnergyReserve>
-    <BRW.ZPM.Meltdown>ZPM Erindi !</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>ZPM Enerji Çekimi</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>ZPM Sorunu: Modül, açık alanda korumadan yerleştirilmesi nedeniyle kritik güvenlik hatası yaşadı. Modifiye edilmiş naquadah kristalleri, kuantik geri besleme nedeniyle ciddi şekilde hasar gördüğünden, cihazın sıfır noktası enerjisi güvenli şekilde yeniden çekmesi için geniş reperasyonlar gerekir.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>{0} atmosferik yüklemeye maruz kalmakta ve kritik şekilde boşalabilir !</BRW.ZPM.Discharge.Warning>
-    <BRW.ZPM.InducedSolarFlare.Title>ZPM İndüklenen Güneş Flaresi</BRW.ZPM.InducedSolarFlare.Title>
-    <BRW.ZPM.InducedSolarFlare>Modül açık alanda korumadan yerleştirildi. Kuantik iletkenler, yıldız sisteminin manyetosferi ile senkronize oldu ve bu, yapay koronal kütle emisyonunu tetikledi. Azaltma: 1. Tavanı onarıp modülü tamamen kapalı bir alana taşı. 2. Krizi bekle ({0}). 3. Modülü tekrar açmadan önce zararlı kristalleri onarı.</BRW.ZPM.InducedSolarFlare>
-    <BRW.ZPM.InducedFlashstorm.Title>ZPM İndüklenen Işık Şiddeti</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>Korumasız ZPM modülü atmosferi ısıttı ve bu, sonraki {0} içinde ışık fırtalarına neden olacak.</BRW.ZPM.InducedFlashstorm>
+    <!-- ZPM Modülü -->
+    <BRW.ZPM.DarkEnergyReserve>Karanlık Enerji Rezervi</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM Dolum Olayı -->
+    <BRW.ZPM.Meltdown>Bir ZPM eridi!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM Erimesi</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM İcatı
+
+Sıfır Nokta Modülü'nün kuantum vakum ekstraksiyon odası kritik bir şekilde konteyner hatası yaşadı: Sıfır Nokta Modülü açık gökyüzünün altında şeffaflaştırılmış kaldı.
+
+ZPM'nin naquadah takviyeli kontrol kristalleri kuantum geri-basmasından ciddi şekilde hasar gördü ve cihazın sıfır nokta enerjisi ekstraksiyonu operasyonlarını güvenli şekilde yeniden başlatmak için kapsamlı onarım gerekir.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0} atmosferik maruziyetten dolayı zarar görüyor ve kritik bir şekilde şarj edebilir!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Diğer ZPM ile ilgili mesajlar -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM'ye Bağlı Güneş Cephesi</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM'ye Bağlı Güneş Cephesi
+
+        Sıfır Nokta Modülü açık gökyüzünün altında şeffaflaştırılmıştır. Kuantum-vakum
+        kanalları sistem yıldızının manyetosferi ile fazla kilitlendi, yapay bir koriyal kütle atılması tetikledi.
+
+        Giderim:
+
+        1. Modülü tekrar örtmek ya da başka bir tamamen kapalı, tavana sahip odaya taşımak.
+        2. Cephe ({0}) geçene kadar beklemek.
+        3. Aktivasyon öncesi hasar gören kristalleri onarmak.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM'ye Bağlı Işık Gökyüzü</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Açık tavanlı bir ZPM atmosferi aşırı ısıttı, bundan sonraki {0} için ışık gökyüzü oluşturmaya neden oldu.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

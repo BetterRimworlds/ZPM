@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <!-- ZPM-moduuli moduuli -->
-    <BRW.ZPM.DarkEnergyReserve>Nullipisteen energiatallenne</BRW.ZPM.DarkEnergyReserve>
+    <!-- ZPM Moduuli -->
+    <BRW.ZPM.DarkEnergyReserve>Tumma energia-varasto</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- ZPM-tyhjentämisen onnettomuus -->
-    <BRW.ZPM.Meltdown>ZPM-moduuli on sulanut!</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>ZPM-moduulin tyhjentäminen</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter> ZPM-moduulin eristysongelma
+    <!-- ZPM Latauksen incidentti -->
+    <BRW.ZPM.Meltdown>ZPM on särinyt!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM-särinyt</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM-säilytysvika
 
-        ZPM-moduulin kvantti-tyhjiön poimintasektori on kärsinyt katastrofalisella eristysongelmalla: ZPM-moduuli oli turvattomasti ilmakehään laitettu.
+Nollapiste-moduulin kvantitomovakuumo-eristyskammio on kokenut katastrofaalisen säilytysvian: Nollapiste-moduuli jäi suojattomaksi avoimessa taivaalla.
 
-        ZPM-moduulin natrium-johtamiskristalli oli vakavasti vaurioitunut kvantin resonanssista, joten on tehtävä suuri määrä korjauksia varmistaaksemme nollapisteen energian poiminnan turvallisen palautuksen.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>Laite {0} on ilmakehään laitettu, voi aiheuttaa katastrofaliset sähköiskut!</BRW.ZPM.Discharge.Warning>
+ZPM:n naquadah-järjestelmän ohjauskivet ovat vahingoittuneet sékä kvanttitomovakuumo-eristyskammio sanomalla, ja laitteen on tehtävä laajat korjaukset ennen kuin se voi turvallisesti jatkaa nollapiste-energian poimintaa.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0} kärsii ilmakehän altistumisesta ja saattaa purkaa katastrofaalisesti!</BRW.ZPM.Discharge.Warning>
 
-    <!-- Muut tiedot ZPM-moduulista -->
+    <!-- Muut ZPM-voidut viestit -->
 
-    <BRW.ZPM.InducedSolarFlare.Title>ZPM-moduulin aiheuttama aurinkotuuli</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM-aiheuttama aurinkotuul</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        ZPM-moduulin aiheuttama aurinkotuuli
+        ZPM-aiheuttama aurinkotuul
 
-        ZPM-moduuli oli turvattomasti ilmakehään laitettu. Sen kvantti-tyhjiön siirto-putki on synkronoinnut itsenäisesti järjestelmän tähtien magnetosfäärin, mikä aiheuttaa aurinkotuulien tekoisesti.
+        Nollapiste-moduuli jäi suojattomaksi avoimessa taivaalla. Sen kvantitomovakuumo-
+        johtimet päivittäin kytkeytyivät järjestelmä-tähden magnetosfäärin kanssa, aikaansaattamaan
+        kiertävän karttomaan massaputouksen.
 
-        Vähemmän vaurioittavaa toimenpide:
+        Mitigointi:
 
-        1. Lisää kansiota tai siirrä moduli suljetuun tilaan.
-        2. Odota aurinkotuulen loppumista ({0}).
-        3. Korjaa vaurioituneet kristallit palauttamisen ennen.
+        1. Uudelleenhuoneistaa tai siirrä moduuli täysin suljettuun, huoneistettuun huoneeseen.
+        2. Odota aurinkotuul (ajankohta {0}).
+        3. Korjaa vahingoittuneet kivet ennen uudelleenkäynnistystä.
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>ZPM-moduulin aiheuttama sähkövirsto</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>ZPM-moduuli ilmakehään laitettuna aiheuttaa ilmakehän lämpenemisen ja sähkövirston {0}.</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM-aiheuttama lämpömyrsky</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Suojattomalla ZPM:llä on ylikuumennettu ilmakehä, joka johtaa {0} seuraavien myrskyjen siihen.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

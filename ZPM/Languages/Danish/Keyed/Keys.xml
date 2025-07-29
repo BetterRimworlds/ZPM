@@ -1,12 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <BRW.ZPM.DarkEnergyReserve>Reservoir for mørk energi</BRW.ZPM.DarkEnergyReserve>
-    <BRW.ZPM.Meltdown>Et ZPM er smeltet !</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>Entladning af ZPM</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>Uheld med ZPM-modulen: Modulen har oplevet en katastrofisk fejl, da den blev sat uden beskyttelse under åbent himmel. Forbedrede naquadah-kristaller er alvorligt skadet af kvantebaseret feedback, hvilket kræver omfattende reparationer, inden enheden kan genoprette zero-point energi-udvinding i en sikker måde.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>{0} er eksponeret for atmosfærisk belastning og kan katastrofisk entlade !</BRW.ZPM.Discharge.Warning>
-    <BRW.ZPM.InducedSolarFlare.Title>Solflare induceret af ZPM</BRW.ZPM.InducedSolarFlare.Title>
-    <BRW.ZPM.InducedSolarFlare>Modulen blev sat uden beskyttelse under åbent himmel. Kvantebaserede ledbånd har synkroniseret sig med stjernetællens magnetosfære, hvilket har forårsaget en kunstig koronal masseudstød. Minderingsmål: 1. Reparér taget eller flyt modulen til et helt lukket rum. 2. Vent til krisen ({0}). 3. Reparér de beskadigede kristaller, inden modulen aktiveres igen.</BRW.ZPM.InducedSolarFlare>
-    <BRW.ZPM.InducedFlashstorm.Title>Blitzstorm induceret af ZPM</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>Et ikke beskyttet ZPM-modul har påvirket atmosfæren, hvilket vil forårsage blitstræder i de næste {0}.</BRW.ZPM.InducedFlashstorm>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Mørk energireserve</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>En ZPM har opløst sig!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM-Forfærdelse</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM-Indholdsbrydelse
+
+Zero Point Modules kvantevakuumertrækningskammer har oplevet en katastrofal indholdsmæssig fejl: Zero-Point Module blev efterladt uden beskyttelse under åben himmel.
+
+ZPM's naquadah-forbedrede kontrolkristaller er blevet stærkt beskadiget af kvantepåvirkningen, og det kræver omfattende reparationer, før enheden kan sikkert genoptage kvantemængdeforlægningsoperationer.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>Den {0} er udsat for atmosfærisk eksponering og kan have en katastrofisk udledning!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Other ZPM related messages -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM-induceret solfluer</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        ZPM-induceret solfluer
+
+        Zero-Point Module blev efterladt uden beskyttelse under åben himmel. Dets kvantevakuumer
+        ledninger blev fasebundet med stjernens magnetosfære, hvilket udløste en
+        kunstig koronalmængdeforlad.
+
+        Forsyningsmåder:
+
+        1. Gen-dække eller flyt modulen til en fuldt indeholdt, taget rom.
+        2. Vent til fluerne forsvinder ({0}).
+        3. Reparer beskadigede kristaller, før genaktivisering.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM-induceret blæsestorm</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>En udedækket ZPM har overopvarmet atmosfæren og føre til blæsestorme i de næste {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

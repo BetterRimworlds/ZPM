@@ -1,12 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <BRW.ZPM.DarkEnergyReserve>Rezerwa czarnej energii</BRW.ZPM.DarkEnergyReserve>
-    <BRW.ZPM.Meltdown>ZPM roztopił się !</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>Wyciąganie energii z ZPM</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>Niepowodzenie w ZPM: Moduł wykonał katastroficzny błąd bezpieczeństwa, ponieważ został umieszczony bez ochrony w otwartej przestrzeni. Zmodyfikowane kryształy naquadah uległy poważnemu uszkodzeniu przez kwantowe sprzężenie, co wymaga szerokiej rekonstrukcji, zanim urządzenie będzie mogło ponownie wyciągać energię z zera punktu w bezpieczny sposób.</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>{0} jest poddawane atmosferycznemu obciążeniu i może katastroficznie się rozładować !</BRW.ZPM.Discharge.Warning>
-    <BRW.ZPM.InducedSolarFlare.Title>Flary słoneczne wywołane przez ZPM</BRW.ZPM.InducedSolarFlare.Title>
-    <BRW.ZPM.InducedSolarFlare>Moduł został umieszczony bez ochrony w otwartej przestrzeni. Kwantowe przewody wykonały synchronizację z magnetosferą układu gwiazdowego, co spowodowało sztuczne wyrzucenie masy koronalnej. Ograniczenia: 1. Odbuduj dach lub przenieś moduł do całkowicie zamkniętej przestrzeni. 2. Czekaj na kryzys ({0}). 3. Odbuduj uszkodzone kryształy przed ponownym uruchomieniem modułu.</BRW.ZPM.InducedSolarFlare>
-    <BRW.ZPM.InducedFlashstorm.Title>Świetlista burza wywołana przez ZPM</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>Moduł ZPM bez ochrony przegrzał atmosferę, co spowoduje burze świetliste w ciągu kolejnych {0}.</BRW.ZPM.InducedFlashstorm>
+    <!-- ZPM Module -->
+    <BRW.ZPM.DarkEnergyReserve>Zasoby Energii Ciemnej</BRW.ZPM.DarkEnergyReserve>
+
+    <!-- ZPM Discharge Incident -->
+    <BRW.ZPM.Meltdown>ZPM się rozpadł!</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>Awaria ZPM</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>Przykrycie ZPM
+
+Moduł zerowej punktu miał katastrofalne zawalenie systemu izolacji. Moduł zerowego punktu został zostawiony bez osłony na niebie.
+
+Kryształy sterujące wzmocnione naquadah zostały znacząco uszkodzone przez odbicia kwantowe, co wymaga szerszych napraw przed ponownym uruchomieniem ekstrakcji energii z punktu zerowego.</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0} doznał narażenia na atmosferę i może ulec katastrofalnemu wyrzuceniu!</BRW.ZPM.Discharge.Warning>
+
+    <!-- Other ZPM related messages -->
+
+    <BRW.ZPM.InducedSolarFlare.Title>Sloneczna burza wywołana ZPM</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare>
+        Sloneczna burza wywołana ZPM
+
+        Moduł zerowego punktu został zostawiony bez osłony na niebie. Jego kanały kwantowo-pustej przestrzeni zostały zsynchronizowane z magnesosferą gwiazdy systemu, powodując sztuczne wyrzutki korony.
+
+        Ochrona:
+
+        1. Ponownie zaopatrzyć lub przenieść moduł do pełnego, zamkniętego pomieszczenia z dachem.
+        2. Poczekaj na burzę ({0}).
+        3. Napraw uszkodzone kryształy przed ponownym uruchomieniem.
+    </BRW.ZPM.InducedSolarFlare>
+
+    <BRW.ZPM.InducedFlashstorm.Title>Burza błyskowa wywołana ZPM</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>Niezasłonięty ZPM nadmiernie podgrzał atmosferę, co doprowadziło do burz błyskowych przez kolejne {0}.</BRW.ZPM.InducedFlashstorm>
 </LanguageData>

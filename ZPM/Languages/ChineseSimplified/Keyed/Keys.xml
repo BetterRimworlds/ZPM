@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
     <!-- ZPM 模块 -->
-    <BRW.ZPM.DarkEnergyReserve>零点能量储备</BRW.ZPM.DarkEnergyReserve>
+    <BRW.ZPM.DarkEnergyReserve>暗能量储备</BRW.ZPM.DarkEnergyReserve>
 
-    <!-- ZPM 放电事故 -->
-    <BRW.ZPM.Meltdown>零点模块熔毁了！</BRW.ZPM.Meltdown>
-    <BRW.ZPMDischarge.Title>零点模块熔毁</BRW.ZPMDischarge.Title>
-    <BRW.ZPMDischarge.Letter>零点模块隔离失效
+    <!-- ZPM 放电事件 -->
+    <BRW.ZPM.Meltdown>ZPM发生熔毁！</BRW.ZPM.Meltdown>
+    <BRW.ZPMDischarge.Title>ZPM熔毁</BRW.ZPMDischarge.Title>
+    <BRW.ZPMDischarge.Letter>ZPM密封失效
 
-        零点模块的量子真空提取室发生灾难性隔离失效：零点模块被遗留在露天环境中。
+零点模块的量子真空提取舱发生了灾难性的密封故障：零点模块在露天环境下未得到屏蔽保护。
 
-        零点模块的钠基增强控制晶体因量子回波严重受损，需进行大量修复工作后才能安全恢复零点能量提取操作。</BRW.ZPMDischarge.Letter>
-    <BRW.ZPM.Discharge.Warning>第 {0} 个装置正在经历大气暴露，可能引发灾难性放电！</BRW.ZPM.Discharge.Warning>
+ZPM的钠四烃增强控制晶体已被量子反冲严重损毁，需进行大量修复后才能重新安全启动零点能量提取操作。</BRW.ZPMDischarge.Letter>
+    <BRW.ZPM.Discharge.Warning>{0}正遭受大气暴露，可能导致灾难性放电！</BRW.ZPM.Discharge.Warning>
 
-    <!-- 其他与 ZPM 相关的信息 -->
+    <!-- 其他ZPM相关消息 -->
 
-    <BRW.ZPM.InducedSolarFlare.Title>零点模块引发的太阳耀斑</BRW.ZPM.InducedSolarFlare.Title>
+    <BRW.ZPM.InducedSolarFlare.Title>ZPM引发的日冕物质抛射</BRW.ZPM.InducedSolarFlare.Title>
     <BRW.ZPM.InducedSolarFlare>
-        零点模块引发的太阳耀斑
+        ZPM引发的日冕物质抛射
 
-        零点模块被遗留在露天环境中。其量子真空导管与系统恒星的磁层同步，引发人工日冕物质抛射。
+        零点模块在露天环境下未得到屏蔽保护。其量子真空导管与恒星磁场相位锁定，触发了人工日冕物质抛射。
 
         缓解措施：
 
-        1. 重新遮盖或将模块移至完全封闭的房间。
-        2. 等待耀斑消退 ({0} )。
-        3. 修复损坏的晶体后再重新激活。
+        1. 为模块重新加盖屋顶或将其移至完全封闭的有顶房间。
+        2. 等待耀斑消退（{0}）。
+        3. 在重新激活前修复受损晶体。
     </BRW.ZPM.InducedSolarFlare>
 
-    <BRW.ZPM.InducedFlashstorm.Title>零点模块引发的闪电风暴</BRW.ZPM.InducedFlashstorm.Title>
-    <BRW.ZPM.InducedFlashstorm>未遮盖的零点模块导致大气超热，接下来 {0} 将出现闪电风暴。</BRW.ZPM.InducedFlashstorm>
+    <BRW.ZPM.InducedFlashstorm.Title>ZPM引发的闪电风暴</BRW.ZPM.InducedFlashstorm.Title>
+    <BRW.ZPM.InducedFlashstorm>未加盖的ZPM使大气层过热，导致接下来的{0}时间内出现闪电风暴。</BRW.ZPM.InducedFlashstorm>
 </LanguageData>
