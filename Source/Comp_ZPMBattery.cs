@@ -166,7 +166,9 @@ public class CompZPMBattery : CompPowerBattery
     private void TriggerZPMInducedSolarFlare()
     {
         // 1. Cause the flare
-        int duration = BetterRandom.pick(8 * 2500, 48 * 2500) + BetterRandom.pick(0, 1000);
+        // 2,500 Ticks per Hour.
+        // Mininum: 8 hours || Maxium: 1,048 hours (43.7 days) || Mean: 22 days
+        int duration = BetterRandom.pick(8 * 2500, 48 * 2500) + (BetterRandom.pick(0, 1000) * 2500);
         GameCondition flare = GameConditionMaker.MakeCondition(
             IncidentDefOf.SolarFlare.gameCondition,
             duration

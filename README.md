@@ -46,7 +46,7 @@ and prevent air‑borne contaminants from degrading the containment field — en
 ### Risks of Open Atmospheric Exposure
 
 * High chance of induced flashstorm incidence.
-* Medium chance of induced intense and long-lasting solar flares.
+* Medium chance of induced intense and long-lasting solar flares (Mininum: 8 hours || Maxium: 1,048 hours (43.7 days) || Mean: 22 days).
 * Low chance of catastrophic electrical discharges. 
 
 ---
