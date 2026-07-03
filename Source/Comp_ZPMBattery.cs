@@ -1,3 +1,4 @@
+// ==== Source/Comp_ZPMBattery.cs ====
 /*
  * This file is part of ZPM, a Better Rimworlds Project.
  *
@@ -36,6 +37,10 @@ public class CompZPMBattery : CompPowerBattery
     private int darkEnergyReserve = 7500; // Starting dark energy reserve
     private int maxDarkEnergy = -1; // Will be calculated based on storedEnergyMax
 
+    // Tracks StoredEnergy across ticks so a vanilla ShortCircuit drain can be
+    // refunded while a Stargate stabilizes the grid. -1 = uninitialized.
+    private float lastStoredEnergy = -1f;
+
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {
         base.PostSpawnSetup(respawningAfterLoad);
@@ -47,6 +52,34 @@ public class CompZPMBattery : CompPowerBattery
         }
     }
 
+    // A Stargate anywhere on the same PowerNet stabilizes the ZPM.
+    // It suppresses the dark-energy mechanics and the normal battery
+    // short-circuit discharge, but NOT the exposed-to-air discharge.
+    private bool StargateOnGrid()
+    {
+        if (PowerNet == null) return false;
+
+        foreach (var transmitter in PowerNet.transmitters)
+        {
+            if (transmitter?.parent?.def?.defName == "Stargate")
+                return true;
+        }
+
+        foreach (var battery in PowerNet.batteryComps)
+        {
+            if (battery?.parent?.def?.defName == "Stargate")
+                return true;
+        }
+
+        foreach (var powerComp in PowerNet.powerComps)
+        {
+            if (powerComp?.parent?.def?.defName == "Stargate")
+                return true;
+        }
+
+        return false;
+    }
+
     private bool detectSolarFlare()
     {
         var solarFlareDef = IncidentDefOf.SolarFlare.gameCondition;
@@ -55,13 +88,54 @@ public class CompZPMBattery : CompPowerBattery
         return isSolarFlare;
     }
 
+    public override void CompTick()
+    {
+        base.CompTick();
+
+        // Refund guard: RimWorld's vanilla ShortCircuit incident drains battery
+        // energy externally and we can't cancel it without Harmony. Instead, while
+        // a Stargate stabilizes the grid, we detect an unexplained large drop in
+        // StoredEnergy between ticks and refund it — so the ZPM can't be drained
+        // (and therefore can't feed a meaningful short-circuit explosion).
+        //
+        // NOTE: this deliberately does NOT run when the ZPM is exposed to the sky,
+        // so the exposed-to-air discharge (which legitimately drains the battery)
+        // is never refunded.
+        if (lastStoredEnergy < 0f)
+        {
+            lastStoredEnergy = StoredEnergy;
+            return;
+        }
+
+        bool isRoofed = parent.Spawned && parent.Map.roofGrid.Roofed(parent.Position);
+
+        if (StargateOnGrid() && isRoofed)
+        {
+            float drop = lastStoredEnergy - StoredEnergy;
+
+            // Only refund sudden, large drops (short-circuit / external drain),
+            // not the small ordinary tick-to-tick consumption of the grid.
+            // A vanilla short-circuit zeroes the battery, so anything above a
+            // modest threshold is treated as an external drain to reverse.
+            float threshold = Props.storedEnergyMax * 0.10f;
+            if (drop > threshold)
+            {
+                AddEnergy(drop);
+            }
+        }
+
+        lastStoredEnergy = StoredEnergy;
+    }
+
     public override void CompTickRare()
     {
         base.CompTickRare();
 
-        // Handle dark energy charging and discharging
+        bool stargateStabilized = StargateOnGrid();
+
         HandleDarkEnergyMechanics();
 
+        // Exposed-to-air discharge ALWAYS runs, Stargate or not.
         CheckExposedDischarge();
     }
 
@@ -322,6 +396,7 @@ public class CompZPMBattery : CompPowerBattery
         base.PostExposeData();
         Scribe_Values.Look(ref darkEnergyReserve, "darkEnergyReserve", 7500); // Use starting value as default
         Scribe_Values.Look(ref maxDarkEnergy, "maxDarkEnergy", -1);
+        Scribe_Values.Look(ref lastStoredEnergy, "lastStoredEnergy", -1f);
     }
 
     public override string CompInspectStringExtra()

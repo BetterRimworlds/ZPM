@@ -75,7 +75,17 @@ The Zero-Point Energy Field is very real. Please see https://en.wikipedia.org/wi
 
 ## Change Log
 
-v2.0.0:
+### v2.2.0
+
+* **[2026-07-03 13:37:09 COT]** Disable the huge ZPM explosions if a Stargate is on the same power grid.
+
+### v2.1.0
+
+* **[2026COT-22 07:33:26 COT]** Fixed a bug in the calculation of induced solar flare duration.
+* **[2025-07-28 19:16:30 COT]** Improved all of the language translations.
+
+### v2.0.0
+
 * **[2025-07-26 05:12:29 CDT]** Added a field manual notice of the dangers of unroofed ZPMs. HEAD -> v2.x
 * **[2025-07-26 04:39:40 CDT]** An unroofed ZPM will now induce flashstorms.
 * **[2025-07-25 07:46:34 CDT]** An unroofed ZPM will now induce intense solar flares.
@@ -90,27 +100,4 @@ v2.0.0:
 * **[2025-07-26 07:35:45 CDT]** Added translations for Czech, Slovak, Estonian, and Hungarian.
 * **[2025-07-26 07:38:05 CDT]** Added translations for Finnish, Norwegian, and Swedish
 
-v1.4.1:
-* **[2025-07-07 20:35:24 CDT]** Improved the building efficiency. origin/v1.x, v1.x
-
-v1.4.0:
-* **[2025-07-07 18:05:20 CDT]** Added support for Rimworld v1.6.
-* **[2025-07-07 18:21:58 CDT]** Migrated to a modern dotnet SDK project.
-
-v1.3.0: 2024-03-14
-* Upgraded to Rimworld v1.5.
-* Refactored to make more compatible with other mods.
-* Use up the dark energy reserves gradually instead of all at once.
-
-v1.2.0: 2023-01-21
-* Upgraded to Rimworld v1.4.
-
-v1.1.0: 2022-01-29
-* Released to Steam Workshop.
-* Ported to the Linux build system for Rimworld mods.
-* Fixed the long-standing sizing bug.
-* Ported to Rimworld v1.3.
-
-v1.0.0: 2021-06-17
-* Initial Release
-
+Older can be found inside the [CHANGELOG.md](CHANGELOG.md).
